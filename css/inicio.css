@@ -1,8 +1,9 @@
 .cartao-inicio {
   width: 100%;
   min-height: 15em;
-  background-color: transparent;
+  background: linear-gradient(-45deg, #2e2e41, #2e2e41, #103772, #315789);
+  border-radius: 1em;
 }
 button:hover{
-  background: linear-gradient(-45deg, #2e2e41, #2e2e41, #103772, #315789);
+  background: linear-gradient(-45deg, #315789, #103772, #2e2e41, #2e2e41);
 }
