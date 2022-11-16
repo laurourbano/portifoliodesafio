@@ -1,0 +1,8 @@
+.cartao-inicio {
+  width: 100%;
+  min-height: 15em;
+  background-color: transparent;
+}
+button:hover{
+  background: linear-gradient(-45deg, #2e2e41, #2e2e41, #103772, #315789);
+}
