@@ -1,6 +1,6 @@
 .cartao-inicio {
   width: 100%;
-  min-height: 15em;
+  min-height: 10em;
   background: linear-gradient(-45deg, #2e2e41, #2e2e41, #103772, #315789);
   border-radius: 1em;
 }
