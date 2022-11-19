@@ -16,6 +16,8 @@ main {
   min-height: 90vh;
   padding-bottom: 1em;
 }
+.colunas {
+}
 .logo {
   color: #68bbe3 !important;
   font-family: 'Freckle Face' !important;
