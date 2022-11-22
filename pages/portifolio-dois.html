@@ -81,43 +81,145 @@
   <main class="mt-2 mb-2">
     <div class="container">
       <div class="data text-secondary small" id="data"></div>
-      <div class="text-light">
-        <h3>5 dicas para criar seu portifólio!</h3>
+      <div class="text-light mb-5 mt-4">
+        <h3 class="mb-4">5 dicas para criar seu portifólio!</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sint! Voluptates magnam, nemo quam quos,
+          esse explicabo, omnis quae repellendus sint minima adipisci ea dolorum voluptatum reiciendis fuga iure.
+          Excepturi.</p>
       </div>
       <div class="text-muted">
-        <p>Exemplo de vídeo para simular vídeo de portifólio</p>
+        <small>Exemplo de vídeo para simular vídeo de portifólio</small>
       </div>
-      <div class="embed-responsive embed-responsive-21by9 mb-4">
+      <div class="embed-responsive embed-responsive-21by9 mb-2">
         <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3Slu65LvQgw"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
-      <!-- Modal grande -->
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Tecnologias e
-        bibliotecas utilizadas</button>
 
-      <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="TituloModalCentralizado">HTML5 | CSS3 | JavaScript | Bootstrap | FontAwesome
-              </h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                <span aria-hidden="true">&times;</span>
-              </button>
+      <div class="mt-0 mb-3">
+        <a href="https://github.com/laurourbano/portifoliodesafio" class="badge badge-dark p-2"
+          target="_blank">Repositório deste projeto
+        </a>
+        <a href="https://laurourbano.github.io/portifoliodesafio/" class="badge badge-dark p-2" target="_blank">Página
+          do
+          projeto
+        </a>
+      </div>
+      <div class="row mx-auto justify-content-center">
+        <!-- Modal grande -->
+        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+          data-target=".bd-example-modal-lg">HTML5</button>
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">HTML5</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body html">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
             </div>
-            <div class="modal-header">
+          </div>
+        </div>
+        <!-- Modal grande -->
+        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+          data-target=".bd-css-modal-lg">CSS3</button>
+
+        <div class="modal fade bd-css-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">CSS3</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body css">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
             </div>
-            <div class="modal-body">Este projeto combina a utilização de HTML em sua versão 5, CSS em sua versão 3 e
-              JavaScript. Com a utilização de bibliotecas, como bootstrap e fontAwesome.</div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          </div>
+        </div>
+        <!-- Modal grande -->
+        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+          data-target=".bd-javascript-modal-lg">JavaScript</button>
+
+        <div class="modal fade bd-javascript-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">JavaScript</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body javascript">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal grande -->
+        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+          data-target=".bd-bootstrap-modal-lg">Bootstrap</button>
+
+        <div class="modal fade bd-bootstrap-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Bootstrap</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body bootstrap">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal grande -->
+        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+          data-target=".bd-fontAwesome-modal-lg">Font
+          Awesome</button>
+
+        <div class="modal fade bd-fontAwesome-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="TituloModalCentralizado">Font Awesome</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body font-awesome">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </main>
 
@@ -125,19 +227,19 @@
   <footer class="bg-dark">
     <div class="container text-center">
       <div class="btn-group" role="group" aria-label="Links">
-        <button type="button" class="btn bg-transparent rounded-circle botao">
+        <button type="button" class="btn btn-dark rounded-circle">
           <a href="https://www.linkedin.com/in/laurourbano" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-linkedin-in text-info"></i></a>
         </button>
-        <button type="button" class="btn bg-transparent rounded-circle botao">
+        <button type="button" class="btn btn-dark rounded-circle">
           <a href="https://github.com/laurourbano" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-github text-light"></i></a>
         </button>
-        <button type="button" class="btn bg-transparent rounded-circle botao">
+        <button type="button" class="btn btn-dark rounded-circle">
           <a href="https://twitter.com/UrbanoOtavio" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-square-twitter text-info"></i></a>
         </button>
-        <button type="button" class="btn bg-transparent rounded-circle botao">
+        <button type="button" class="btn btn-dark rounded-circle">
           <a href="https://www.instagram.com/lauro_otavio/" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-instagram text-danger"></i></a>
         </button>
