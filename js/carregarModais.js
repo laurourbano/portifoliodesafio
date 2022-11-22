@@ -29,8 +29,11 @@ const conteudo = [
 
 /*Injetando conteúdo nos modais --- MELHORAR O CÓDIGO ---*/
 
-const conteudoDinamico = document.querySelectorAll('.conteudoDinamico');
-console.log(conteudoDinamico);
+const conteudoDinamico = document.querySelectorAll('.conteudo-dinamico');
+conteudoDinamico.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`
+console.log(conteudo);
+
+/*este trecho funciona*/
 
 const html = document.querySelector('.html');
 html.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
