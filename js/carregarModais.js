@@ -9,6 +9,7 @@ const conteudobootstrap = "Bootstrap - O Bootstrap é uma ferramenta gratuita pa
 
 const conteudofontawesome = "Font Awesome - Font Awesome é um conjunto de ferramentas de fontes e ícones com base em CSS e LESS, totalmente personalizável e fácil de usar. Os ícones são totalmente personalizáveis. Você pode alterar a cor, tamanho, estilo e até mesmo adicionar animação aos ícones. <a href='https://fontawesome.com/docs' target='_blank'>Site Oficial</a>"
 
+/*Injetando conteúdo nos modais*/
 
 const html = document.querySelector('.html');
 html.innerHTML = `${conteudohtml}`;
