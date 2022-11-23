@@ -38,7 +38,7 @@ const conteudoDinamico = document.querySelectorAll('.conteudo-dinamico');
 conteudoDinamico.innerHTML = `${conteudo[0].subtitulo + conteudo[0].paragrafo + conteudo[0].link}`
 console.log(conteudo);
 
-/*este trecho funciona*/
+/*este trecho funciona - titulos*/
 const titulo = document.querySelector('.titulo');
 titulo.innerHTML = `${conteudo[0].titulo}`;
 
@@ -54,6 +54,7 @@ titulo3.innerHTML = `${conteudo[3].titulo}`;
 const titulo4 = document.querySelector('.titulo4');
 titulo4.innerHTML = `${conteudo[4].titulo}`;
 
+/*este trecho funciona - subtitulos*/
 const html = document.querySelector('.html');
 html.innerHTML = `${conteudo[0].subtitulo + conteudo[0].paragrafo + conteudo[0].link}`;
 
