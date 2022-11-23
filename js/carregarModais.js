@@ -30,11 +30,7 @@ const conteudo = [
 /*Injetando conteúdo nos modais --- MELHORAR O CÓDIGO ---*/
 
 const conteudoDinamico = document.querySelectorAll('.conteudo-dinamico');
-
-conteudoDinamico.forEach((number, index)=>{
-    console.log('Index: ' + index + 'Value: ' + number.tagName)
-})
-
+conteudoDinamico.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`
 console.log(conteudo);
 
 /*este trecho funciona*/
