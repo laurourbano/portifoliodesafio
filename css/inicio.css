@@ -7,3 +7,9 @@
 .botao:hover{
   background: linear-gradient(-45deg, #315789, #103772, #2e2e41, #2e2e41);
 }
+.fa-copy {
+  margin-left: 1.1em;
+  font-size: 1.5em;
+  text-decoration: none;
+  outline: none;
+}
