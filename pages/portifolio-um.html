@@ -77,7 +77,7 @@
       </div>
     </nav>
   </header>
-  <main class="mt-2 mb-5">
+  <main class="mt-2 mb-2">
     <div class="container">
       <div class="data text-secondary small" id="data"></div>
       <div class="text-white-50 mb-5 mt-2">
@@ -87,7 +87,9 @@
           marcação de HiperTexto, o <span><a href="../pages/descricaoTecnologias.html#css">CSS</a></span> ou folha de
           estilos em cascata e o <span><a href="../pages/descricaoTecnologias.html#javascript">JavaScript</a></span> que
           é a linguagem de programação
-          interpretada pelos navegadores web.</p>
+          interpretada pelos navegadores web. Além do <span><a
+              href="../pages/descricaoTecnologias.html#bootstrap">Bootstrap</a></span> e do <span><a
+              href="../pages/descricaoTecnologias.html#fontawesome">Font Awesome</a></span>.</p>
       </div>
       <div class="text-muted">
         <small>Exemplo de vídeo para simular vídeo de portifólio</small>
@@ -109,23 +111,24 @@
         </a>
       </div>
 
-      <div class="row mx-auto justify-content-center">
-        <!-- Modal grande -->
-        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+      <!-- Código quebrou, verificar o que aconteceu
+        <div class="row mx-auto">
+
+        <button type="button" class="btn btn-primary p-2 m-1" data-toggle="modal"
           data-target=".bd-html-modal-lg">HTML5</button>
+
         <div class="modal fade bd-html-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <div class="modal-title titulo0" id="TituloModalCentralizado">
+                <div class="modal-title titulo" id="TituloModalCentralizado">
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body html">
-                <!--texto inserido dinamicamente de um array de objetos-->
+              <div class="modal-body html ">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -133,9 +136,10 @@
             </div>
           </div>
         </div>
-        <!-- Modal grande -->
-        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+
+        <button type="button" class="btn btn-primary p-2 m-1" data-toggle="modal"
           data-target=".bd-css-modal-lg">CSS3</button>
+
         <div class="modal fade bd-css-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-lg">
@@ -155,8 +159,8 @@
             </div>
           </div>
         </div>
-        <!-- Modal grande -->
-        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+
+        <button type="button" class="btn btn-primary p-2 m-1" data-toggle="modal"
           data-target=".bd-javascript-modal-lg">JavaScript</button>
 
         <div class="modal fade bd-javascript-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -178,8 +182,8 @@
             </div>
           </div>
         </div>
-        <!-- Modal grande -->
-        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
+
+        <button type="button" class="btn btn-primary p-2 m-1" data-toggle="modal"
           data-target=".bd-bootstrap-modal-lg">Bootstrap</button>
 
         <div class="modal fade bd-bootstrap-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
@@ -201,12 +205,11 @@
             </div>
           </div>
         </div>
-        <!-- Modal grande -->
-        <button type="button" class="btn btn-primary p-3 m-1" data-toggle="modal"
-          data-target=".bd-fontAwesome-modal-lg">Font
-          Awesome</button>
 
-        <div class="modal fade bd-fontAwesome-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+        <button type="button" class="btn btn-primary p-2 m-1" data-toggle="modal"
+          data-target=".bd-fontawesome-modal-lg">Font Awesome</button>
+
+        <div class="modal fade bd-fontawesome-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
           aria-hidden="true">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -217,7 +220,7 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body font-awesome">
+              <div class="modal-body fontawesome">
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -225,7 +228,8 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
+
     </div>
   </main>
 
@@ -259,7 +263,7 @@
 
   <!-- JavaScript (Opcional) -->
   <script src="../js/script.js"></script>
-  <script src="../js/carregarModais.js"></script>
+  <script src="../js/carregarConteudo.js"></script>
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
