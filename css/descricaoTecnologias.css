@@ -1,5 +1,6 @@
 .page {
     display: flex;
+    text-align: justify;
     flex-direction: column;
     justify-content: center;
     align-items: center;
