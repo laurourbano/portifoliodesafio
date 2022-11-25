@@ -7,14 +7,17 @@
     width: 100%;
     height: 100vh;
 }
+.wrapper {
+    background: linear-gradient(-45deg, #123a,#234,#1234,#123);
+    min-height: fit-content;
+    padding: 3em;
+}
 h4{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     text-transform: uppercase;
 }
 p {
     font-weight: 500;
-    margin: .5em 0;
-    padding: .5em 0;
 }
 a {
     font-weight: 900;
