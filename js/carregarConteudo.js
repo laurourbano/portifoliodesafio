@@ -17,12 +17,12 @@ const conteudo = [
     },
     {
         nome:'<p>Cascading Style Sheets - linguagem de estilização de componentes</p>',
-        texto:'<p>Folha de estilo em cascata é usada para estilizar e arranjar páginas web — por exemplo, para alterar a fonte, cor, tamanho e espaçamento do seu conteúdo, separá-lo em multiplas colunas, ou então adicionar animações e outras implementações decorativas. Esse módulo provê um começo sutil em seu caminho pelo domínio do CSS com o básico de como ele funciona, como é a aparência da sintaxe e como você pode começar a utilizá-lo para estilizar seu HTML.</p>',
+        texto:'<p>Folha de estilo em cascata é usada para estilizar e arranjar páginas web — por exemplo, para alterar a fonte, cor, tamanho e espaçamento do seu conteúdo, separá-lo em multiplas colunas, ou então adicionar animações e outras implementações decorativas.</p>',
         link:'<a href="https://developer.mozilla.org/pt-BR/docs/Learn/CSS" target="_blank">Site Oficial</a>'
     },
     {
         nome:'<p>Linguagem de programação</p>',
-        texto:'<p>JavaScript é uma linguagem de programação que permite implementar funcionalidades mais complexas em páginas web. Sempre que uma página web faz mais do que apenas mostrar informações estáticas para você - ela mostra em tempo real conteúdos atualizados, mapas interativos, animações gráficas em 2D/3D, vídeos, etc. - você pode apostar que o Javascript provavelmente está envolvido.</p>',
+        texto:'<p>JavaScript é uma linguagem de programação que permite implementar funcionalidades mais complexas em páginas web. Sempre que uma página web faz mais do que apenas mostrar informações estáticas para você - ela mostra em tempo real conteúdos atualizados, mapas interativos, animações gráficas em 2D/3D.</p>',
         link:'<a href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript" target="_blank">Site Oficial</a>'
     },
     {

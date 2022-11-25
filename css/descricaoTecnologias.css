@@ -8,12 +8,10 @@
     height: 100vh;
 }
 h4{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     text-transform: uppercase;
-
 }
 p {
-    line-height: 2em;
     font-weight: 500;
     margin: 1em 0;
     padding: 1em 0;
