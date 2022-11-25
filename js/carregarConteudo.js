@@ -54,29 +54,29 @@ const conteudo = [
 
 /*Injetando conteúdo nos modais*/
 
-const titulohtml = document.querySelector('.titulo');
+const titulohtml = document.querySelector('.titulohtml');
 titulohtml.innerHTML = `${titulo[0]}`;
 
-const titulocss = document.querySelector('.titulo1');
+const titulocss = document.querySelector('.titulocss');
 titulocss.innerHTML = `${titulo[1]}`;
 
-const titulojavascript = document.querySelector('.titulo2');
+const titulojavascript = document.querySelector('.titulojavascript');
 titulojavascript.innerHTML = `${titulo[2]}`;
 
-const titulo3 = document.querySelector('.titulo3');
-titulo3.innerHTML = `${titulo[3]}`;
+const titulobootstrap = document.querySelector('.titulobootstrap');
+titulobootstrap.innerHTML = `${titulo[3]}`;
 
-const titulo4 = document.querySelector('.titulo4');
-titulo4.innerHTML = `${titulo[4]}`;
+const titulofontawesome = document.querySelector('.titulofontawesome');
+titulofontawesome.innerHTML = `${titulo[4]}`;
 
-const titulo5 = document.querySelector('.titulo5');
-titulo5.innerHTML = `${titulo[5]}`;
+const tituloangular = document.querySelector('.tituloangular');
+tituloangular.innerHTML = `${titulo[5]}`;
 
-const titulo6 = document.querySelector('.titulo6');
-titulo6.innerHTML = `${titulo[6]}`;
+const titulotypescript = document.querySelector('.titulotypescript');
+titulotypescript.innerHTML = `${titulo[6]}`;
 
-const titulo7 = document.querySelector('.titulo7');
-titulo7.innerHTML = `${titulo[7]}`;
+const tituloreact = document.querySelector('.tituloreact');
+tituloreact.innerHTML = `${titulo[7]}`;
 
 const html = document.querySelector('.html');
 html.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
