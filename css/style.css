@@ -12,10 +12,10 @@ body {
   width: 100%;
   height: 100%;
   background-size: 300% 300%;
-  animation: backgroundTransition 8s ease-in-out infinite;
+  animation: transicao 7s ease-in-out infinite;
   position: relative;
 }
-@keyframes backgroundTransition {
+@keyframes transicao {
   0% {
       background-position:  0% 80%;
   }
@@ -35,7 +35,7 @@ main {
 .logo {
   color: #ace3ff !important;
   font-family: 'Freckle Face' !important;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 a, button {
   text-decoration: none !important;
