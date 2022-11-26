@@ -1,0 +1,9 @@
+.cartao-formacao {
+  width: 100%;
+  min-height: fit-content;
+  background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
+  border-radius: 1em;
+}
+.cartao-formacao img {
+  border-radius: 1em;
+}

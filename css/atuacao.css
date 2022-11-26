@@ -1,14 +1,12 @@
 .cartao-atuacao:nth-child(even) {
   width: 100%;
   min-height: fit-content;
-  background: linear-gradient(-45deg, #1b2552, #18224d, #27367a, #27367a);
+  background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
   border-radius: 1em;
-  filter:sepia(-30%);
 }
 .cartao-atuacao:nth-child(odd) {
   width: 100%;
   min-height: fit-content;
-  background: linear-gradient(-45deg, #27367a, #27367a, #18224d, #1b2552);
+  background: linear-gradient(-45deg, #103772, #103772, #1f1f27, #1f1f27);
   border-radius: 1em;
-  filter:drop-shadow(10);
 }
