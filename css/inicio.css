@@ -1,9 +1,9 @@
 .cartao-inicio {
   width: 100%;
   min-height: 15em;
-  background: linear-gradient(-45deg, #29293d, #2e2e46, #133c7a, #274d7e);
+  background: linear-gradient(-45deg, #315789, #103772, #1f1f27, #1f1f27);
   border-radius: 1em;
 }
 .botao:hover{
-  background: linear-gradient(-45deg, #274d7e, #133c7a, #2e2e46, #29293d);
+  background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
 }

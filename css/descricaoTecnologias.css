@@ -8,9 +8,10 @@
     height: 100vh;
 }
 .wrapper {
-    background: linear-gradient(-45deg, #123a,#234,#1234,#123);
+    background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
     min-height: fit-content;
     padding: 3em;
+    border-radius: 1em;
 }
 h4{
     margin-bottom: .5em;
@@ -19,6 +20,6 @@ h4{
 p {
     font-weight: 500;
 }
-a {
+.wrapper a {
     font-weight: 900;
 }
