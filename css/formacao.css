@@ -1,9 +1,14 @@
 .cartao-formacao {
   width: 100%;
   min-height: fit-content;
-  background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
+  margin: 1em;
   border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 .cartao-formacao img {
-  border-radius: 1em;
+  min-width: 2em;
+  min-height: 2em;
 }
