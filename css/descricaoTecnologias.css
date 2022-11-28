@@ -23,3 +23,9 @@ p {
 .wrapper a {
     font-weight: 900;
 }
+
+@media screen and (max-width:724px) {
+    .wrapper{
+        padding: 1em;
+    }
+}
