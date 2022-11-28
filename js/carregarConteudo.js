@@ -1,4 +1,5 @@
-/*Conteúdo dos Modais nos Portifólios - array de objetos chave:valor*/
+/*Texto dos títulos array*/
+
 const titulo = [
     `<h4>HTML5</h4>`,
     `<h4>CSS3</h4>`,
@@ -7,7 +8,10 @@ const titulo = [
     `<h4>Font Awesome</h4>`,
     `<h4>Angular</h4>`,
     `<h4>TypeScript</h4>`,
-    `<h4>React</h4>`];
+    `<h4>React</h4>`
+];
+
+/*Conteúdo dos Modais nos Portifólios - array de objetos chave:valor*/
 
 const conteudo = [
     {
@@ -52,52 +56,44 @@ const conteudo = [
     }
 ];
 
-/*Injetando conteúdo nos modais*/
+/*Injetando conteúdo nos HTML*/
+
+    //capturando as classes dos títulos
 
 const titulohtml = document.querySelector('.titulohtml');
-titulohtml.innerHTML = `${titulo[0]}`;
-
 const titulocss = document.querySelector('.titulocss');
-titulocss.innerHTML = `${titulo[1]}`;
-
 const titulojavascript = document.querySelector('.titulojavascript');
-titulojavascript.innerHTML = `${titulo[2]}`;
-
 const titulobootstrap = document.querySelector('.titulobootstrap');
-titulobootstrap.innerHTML = `${titulo[3]}`;
-
 const titulofontawesome = document.querySelector('.titulofontawesome');
-titulofontawesome.innerHTML = `${titulo[4]}`;
-
 const tituloangular = document.querySelector('.tituloangular');
-tituloangular.innerHTML = `${titulo[5]}`;
-
 const titulotypescript = document.querySelector('.titulotypescript');
-titulotypescript.innerHTML = `${titulo[6]}`;
-
 const tituloreact = document.querySelector('.tituloreact');
+
+titulohtml.innerHTML = `${titulo[0]}`;
+titulocss.innerHTML = `${titulo[1]}`;
+titulojavascript.innerHTML = `${titulo[2]}`;
+titulobootstrap.innerHTML = `${titulo[3]}`;
+titulofontawesome.innerHTML = `${titulo[4]}`;
+tituloangular.innerHTML = `${titulo[5]}`;
+titulotypescript.innerHTML = `${titulo[6]}`;
 tituloreact.innerHTML = `${titulo[7]}`;
 
+    //capturando as classes de conteúdos
+
 const html = document.querySelector('.html');
-html.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
-
 const css = document.querySelector('.css');
-css.innerHTML = `${conteudo[1].nome + conteudo[1].texto + conteudo[1].link}`;
-
 const javascript = document.querySelector('.javascript');
-javascript.innerHTML = `${conteudo[2].nome + conteudo[2].texto + conteudo[2].link}`;
-
 const bootstrap = document.querySelector('.bootstrap');
-bootstrap.innerHTML = `${conteudo[3].nome + conteudo[3].texto + conteudo[3].link}`;
-
 const fontawesome = document.querySelector('.fontawesome');
-fontawesome.innerHTML = `${conteudo[4].nome + conteudo[4].texto + conteudo[4].link}`;
-
 const angular = document.querySelector('.angular');
-angular.innerHTML = `${conteudo[5].nome + conteudo[5].texto + conteudo[5].link}`;
-
 const typescript = document.querySelector('.typescript');
-typescript.innerHTML = `${conteudo[6].nome + conteudo[6].texto + conteudo[6].link}`;
-
 const react = document.querySelector('.react');
+
+html.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
+css.innerHTML = `${conteudo[1].nome + conteudo[1].texto + conteudo[1].link}`;
+javascript.innerHTML = `${conteudo[2].nome + conteudo[2].texto + conteudo[2].link}`;
+bootstrap.innerHTML = `${conteudo[3].nome + conteudo[3].texto + conteudo[3].link}`;
+fontawesome.innerHTML = `${conteudo[4].nome + conteudo[4].texto + conteudo[4].link}`;
+angular.innerHTML = `${conteudo[5].nome + conteudo[5].texto + conteudo[5].link}`;
+typescript.innerHTML = `${conteudo[6].nome + conteudo[6].texto + conteudo[6].link}`;
 react.innerHTML = `${conteudo[7].nome + conteudo[7].texto + conteudo[7].link}`;
