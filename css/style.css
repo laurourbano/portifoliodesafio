@@ -33,7 +33,7 @@ body {
 
 main {
   margin-top: 0em;
-  min-height: 90vh;
+  min-height: 80vh;
   padding-bottom: 1em;
 }
 .logo {
@@ -61,4 +61,11 @@ footer {
   height: 100px;
   bottom: 0;
   left: 0;
+}
+footer{
+  border-top: 1px solid #555;
+}
+header{
+  border-bottom: 1px solid #555;
+
 }
