@@ -8,7 +8,7 @@ let hora = data.toLocaleTimeString();
 //cria data nas páginas
 
 let dataDocumento = document.querySelector("#data")
-dataDocumento.innerHTML = `<small>Você acessou este site no dia ${hoje}, às ${hora}.</small>`;
+dataDocumento.innerHTML += `<small>Você acessou este site no dia ${hoje}, às ${hora}.</small>`;
 
 //calcula idade
 
@@ -21,8 +21,3 @@ let idade = atual - nascimento;
 function voltar() {
   window.history.back();
 }
-
-function validaInput(){
-  const inputObject = document.querySelector('.input')
-}
-console.log(validaInput())

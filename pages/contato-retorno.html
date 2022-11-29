@@ -4,7 +4,7 @@
 <head>
 
   <!-- Meta tag de Título da Página -->
-  <title>Lauro Urbano | Contato</title>
+  <title>contato retorno</title>
 
   <!-- Meta tags Obrigatórias -->
   <meta charset="utf-8">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- CSS da página -->
-  <link rel="stylesheet" href="../css/contato.css">
+  <link rel="stylesheet" href="../css/descricaoTecnologias.css">
 
   <!-- Ícone do site -->
   <link rel="shortcut icon" href="../assets/favicon/desenvolvimento-web.png" type="image/x-icon">
@@ -34,7 +34,7 @@
   <!-- Cabeçalho -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark ">
-      <a class="navbar-brand logo" href="../index.html">Lauro Urbano</a>
+      <a class="navbar-brand logo" href="../index.html" id="inicio">Lauro Urbano</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
         <span class="navbar-toggler-icon"></span>
@@ -61,13 +61,13 @@
               <i class="fa fa-graduation-cap" aria-hidden="true"></i> Formação
             </a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="contato.html">
               <i class="fa fa-contact-card" aria-hidden="true"></i> Contato
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            <a class="nav-link dropdown-toggle ativo" href="#" id="navbarDropdownMenuLink" role="button"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-code"
                 aria-hidden="true"></i> Portifólio
             </a>
@@ -88,64 +88,20 @@
   <!-- Conteúdo -->
   <main class="conteudo py-2">
     <div class="container">
-      <div class="data text-secondary small container" id="data"></div>
-      <div class="text-white-50 row d-flex justify-content-around mx-auto w-100">
-        <h2 class="mb-4 border-bottom p-2 w-100">Entre em contato conosco.</h2>
-        <form class="col-lg-6 w-100 mb-2">
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" class="form-control input" id="nome" placeholder="Nome" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Endereço de email</label>
-            <input type="email" class="form-control input" id="email" placeholder="Seu email" required>
-          </div>
-          <div class="form-group">
-            <label for="telefone">Telefone</label>
-            <input type="tel" class="form-control input" id="telefone" placeholder="Seu Telefone"
-              aria-describedby="Informacao" required>
-            <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
-              ninguém.</small>
-          </div>
-          <div class="form-group">
-            <label for="textArea" class="w-100">Deixe aqui sua mensagem</label>
-            <textarea name="textArea" class="w-100" id="textArea" rows="5" placeholder="Sua mensagem" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary w-50">Enviar</button>
-        </form>
-        <section class="col-lg-5 ml-0 mt-2">
-          <h5 class="">Dados de contato</h5>
-          <a class="d-block" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
-          <a class="d-block" href="tel:+5541998086077">+55(41)99808-6077</a>
-          <address class="d-block">Jardim São Gabriel - Colombo</address>
-          <div class="" role="group" aria-label="Links">
-              <a class="d-block btn btn-outline-light mb-2" href="https://www.linkedin.com/in/laurourbano" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-linkedin-in text-info">  </i>  Linkedin</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://github.com/laurourbano" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-github text-secondary">  </i> Github</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://twitter.com/UrbanoOtavio" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-square-twitter text-info">  </i> Twitter</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://www.instagram.com/lauro_otavio/" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-instagram text-danger">  </i> Instagram</a>
-          </div>
-    
-        </section>
-        <div class="img-fluid container-iframe mt-2">
-          <iframe class="responsive-iframe"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14422.50621678881!2d-49.1990754!3d-25.35030955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce881209c37f3%3A0xd3cf352ba28a8660!2sJardim%20Sao%20Gabriel%2C%20Colombo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1668548055283!5m2!1spt-BR!2sbr"
-            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
+      <div class="row text-white-50">
+        <input type="number" class="id1" min:"100" max:"300" required>
+        <button class="btn btn-primary" onclick="validaInput()">ok</button>
+        <p id="demo"></p>
       </div>
+
     </div>
   </main>
 
-  <!-- ⁡⁢⁣⁢Rodapé ⁡-->
+  <!--⁡⁢⁣ ⁢Rodapé ⁡-->
   <footer class="">
     <div class="container text-center">
       <div class="btn-group" role="group" aria-label="Links">
-        <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
+        <button type="button" class="btn btn-outline-dark rounded-circle ml-3 mr-3">
           <a href="https://www.linkedin.com/in/laurourbano" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-linkedin-in text-info"></i></a>
         </button>
@@ -157,13 +113,13 @@
           <a href="https://twitter.com/UrbanoOtavio" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-square-twitter text-info"></i></a>
         </button>
-        <button type="button" class="btn btn-outline-dark rounded-circle">
+        <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
           <a href="https://www.instagram.com/lauro_otavio/" target="_blank" rel="noopener noreferrer"><i
               class="fa-brands fa-instagram text-danger"></i></a>
         </button>
       </div>
 
-      <!-- ⁡⁢⁣⁢Criação ⁡-->
+      <!-- ⁢Criação ⁡-->
       <div>
         <small class="text-muted"> Página criada por Lauro Otávio Urbano</small>
       </div>
@@ -171,7 +127,7 @@
   </footer>
 
   <!-- JavaScript (Opcional) -->
-  <script src="../js/script.js"></script>
+  <script src="../js/funcoes.js"></script>
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -183,7 +139,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
   </script>
-
+  <noscript>
+    <h1>JavaScript desativado, algumas funcionalidades não estarão disponíveis.</h1>
+  </noscript>
 </body>
 
 </html>
