@@ -21,3 +21,8 @@ let idade = atual - nascimento;
 function voltar() {
   window.history.back();
 }
+
+function validaInput(){
+  const inputObject = document.querySelector('.input')
+}
+console.log(validaInput())
