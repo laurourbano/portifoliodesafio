@@ -16,3 +16,8 @@ let nascimento = 1985;
 let atual = ano.valueOf();
 let idade = atual - nascimento;
 
+//volta para página anterior | método back da API de histórico do navegador
+
+function voltar() {
+  window.history.back();
+}

@@ -69,14 +69,14 @@ const tituloangular = document.querySelector('.tituloangular');
 const titulotypescript = document.querySelector('.titulotypescript');
 const tituloreact = document.querySelector('.tituloreact');
 
-titulohtml.innerHTML = `${titulo[0]}`;
-titulocss.innerHTML = `${titulo[1]}`;
-titulojavascript.innerHTML = `${titulo[2]}`;
-titulobootstrap.innerHTML = `${titulo[3]}`;
-titulofontawesome.innerHTML = `${titulo[4]}`;
-tituloangular.innerHTML = `${titulo[5]}`;
-titulotypescript.innerHTML = `${titulo[6]}`;
-tituloreact.innerHTML = `${titulo[7]}`;
+titulohtml.innerHTML += `${titulo[0]}`;
+titulocss.innerHTML += `${titulo[1]}`;
+titulojavascript.innerHTML += `${titulo[2]}`;
+titulobootstrap.innerHTML += `${titulo[3]}`;
+titulofontawesome.innerHTML += `${titulo[4]}`;
+tituloangular.innerHTML += `${titulo[5]}`;
+titulotypescript.innerHTML += `${titulo[6]}`;
+tituloreact.innerHTML += `${titulo[7]}`;
 
     //capturando as classes de conteúdos
 
@@ -89,11 +89,11 @@ const angular = document.querySelector('.angular');
 const typescript = document.querySelector('.typescript');
 const react = document.querySelector('.react');
 
-html.innerHTML = `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
-css.innerHTML = `${conteudo[1].nome + conteudo[1].texto + conteudo[1].link}`;
-javascript.innerHTML = `${conteudo[2].nome + conteudo[2].texto + conteudo[2].link}`;
-bootstrap.innerHTML = `${conteudo[3].nome + conteudo[3].texto + conteudo[3].link}`;
-fontawesome.innerHTML = `${conteudo[4].nome + conteudo[4].texto + conteudo[4].link}`;
-angular.innerHTML = `${conteudo[5].nome + conteudo[5].texto + conteudo[5].link}`;
-typescript.innerHTML = `${conteudo[6].nome + conteudo[6].texto + conteudo[6].link}`;
-react.innerHTML = `${conteudo[7].nome + conteudo[7].texto + conteudo[7].link}`;
+html.innerHTML += `${conteudo[0].nome + conteudo[0].texto + conteudo[0].link}`;
+css.innerHTML += `${conteudo[1].nome + conteudo[1].texto + conteudo[1].link}`;
+javascript.innerHTML += `${conteudo[2].nome + conteudo[2].texto + conteudo[2].link}`;
+bootstrap.innerHTML += `${conteudo[3].nome + conteudo[3].texto + conteudo[3].link}`;
+fontawesome.innerHTML += `${conteudo[4].nome + conteudo[4].texto + conteudo[4].link}`;
+angular.innerHTML += `${conteudo[5].nome + conteudo[5].texto + conteudo[5].link}`;
+typescript.innerHTML += `${conteudo[6].nome + conteudo[6].texto + conteudo[6].link}`;
+react.innerHTML += `${conteudo[7].nome + conteudo[7].texto + conteudo[7].link}`;
