@@ -6,5 +6,11 @@ function validaInput(){
     }
 }
 let lauro = localStorage
-console.log(lauro)
+let input = document.querySelector(".id1")
+
+lauro.innerHTML = input.innerHTML
+console.log(input.innerHTML)
+
+let dados = document.querySelector("#demo");
+dados.innerText = lauro.innerHTML
 
