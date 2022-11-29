@@ -5,6 +5,6 @@ function validaInput(){
       document.getElementById("demo").innerHTML = inputObject.validationMessage;
     }
 }
-
-console.log(validaInput.value)
+let lauro = localStorage
+console.log(lauro)
 
