@@ -12,5 +12,6 @@ function enviarMensagem() {
     localStorage.cont = 1;
   }
   cadastro = document.getElementById('nome').value + ';' + document.getElementById('email').value + ';' + document.getElementById('telefone').value + ';' + document.getElementById('textarea').value;
-  localStorage.setItem("cadastro_" + localStorage.cont, cadastro)
+  localStorage.setItem("cadastro_" + localStorage.cont, cadastro);
+  exemplo.innerHTML = localStorage.cadastro;
 }
