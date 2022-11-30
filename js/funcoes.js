@@ -15,4 +15,4 @@ function enviarMensagem() {
   localStorage.setItem("cadastro_" + localStorage.cont, cadastro);
   exemplo.innerHTML = localStorage.cadastro;
 }
-exemplo.innerHTML = localStorage.cadastro
+exemplo.innerHTML = 'Lauro'
