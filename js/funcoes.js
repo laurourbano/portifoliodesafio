@@ -1,16 +1,11 @@
+const nome = document.querySelector('#nome');
+const email = document.querySelector('#email');
+const telefone = document.querySelector('#telefone');
+const textarea = document.querySelector('#textarea')
+const enviar = document.querySelector('#enviar')
 
-function validaInput(){
-    const inputObject = document.getElementById('id1');
-    if (!inputObject.checkValidity()){
-      document.getElementById("demo").innerHTML = inputObject.validationMessage;
-    }
-}
-let lauro = localStorage
-let input = document.querySelector(".id1")
+console.log(nome, email, telefone, textarea, enviar)
 
-lauro.innerHTML = input.innerHTML
-console.log(input.innerHTML)
+let dados = {'nome': nome.value, 'email': email.value, 'telefone': telefone.value, 'textarea': textarea.value};
 
-let dados = document.querySelector("#demo");
-dados.innerText = lauro.innerHTML
-
+console.log(dados)

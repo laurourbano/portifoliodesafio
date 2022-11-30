@@ -109,9 +109,10 @@
           </div>
           <div class="form-group">
             <label for="textArea" class="w-100">Deixe aqui sua mensagem</label>
-            <textarea name="textArea" class="w-100" id="textArea" rows="5" placeholder="Sua mensagem" required></textarea>
+            <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Sua mensagem"
+              required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary w-50">Enviar</button>
+          <button id="enviar" onClick="enviarMensagem()" class="btn btn-primary w-50">Enviar</button>
         </form>
         <section class="col-lg-5 ml-0 mt-2">
           <h5 class="">Dados de contato</h5>
@@ -119,16 +120,16 @@
           <a class="d-block" href="tel:+5541998086077">+55(41)99808-6077</a>
           <address class="d-block">Jardim São Gabriel - Colombo</address>
           <div class="" role="group" aria-label="Links">
-              <a class="d-block btn btn-outline-light mb-2" href="https://www.linkedin.com/in/laurourbano" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-linkedin-in text-info">  </i>  Linkedin</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://github.com/laurourbano" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-github text-secondary">  </i> Github</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://twitter.com/UrbanoOtavio" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-square-twitter text-info">  </i> Twitter</a>
-              <a class="d-block btn btn-outline-light mb-2" href="https://www.instagram.com/lauro_otavio/" target="_blank" rel="noopener noreferrer"><i
-                  class="fa-brands fa-instagram text-danger">  </i> Instagram</a>
+            <a class="d-block btn btn-outline-light mb-2" href="https://www.linkedin.com/in/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i> Linkedin</a>
+            <a class="d-block btn btn-outline-light mb-2" href="https://github.com/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
+            <a class="d-block btn btn-outline-light mb-2" href="https://twitter.com/UrbanoOtavio" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
+            <a class="d-block btn btn-outline-light mb-2" href="https://www.instagram.com/lauro_otavio/" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i> Instagram</a>
           </div>
-    
+
         </section>
         <div class="img-fluid container-iframe mt-2">
           <iframe class="responsive-iframe"
@@ -172,6 +173,7 @@
 
   <!-- JavaScript (Opcional) -->
   <script src="../js/script.js"></script>
+  <script src="../js/funcoes.js"></script>
 
   <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
