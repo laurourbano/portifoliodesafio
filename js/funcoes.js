@@ -3,7 +3,7 @@ const email = document.querySelector('#email');
 const telefone = document.querySelector('#telefone');
 const textarea = document.querySelector('#textarea');
 const enviar = document.querySelector('#enviar');
-const exemplo = document.querySelector('.exemplo');
+const exemplo = document.querySelector('#exemplo');
 
 function enviarMensagem() {
   if (localStorage.cont) {
@@ -15,3 +15,4 @@ function enviarMensagem() {
   localStorage.setItem("cadastro_" + localStorage.cont, cadastro);
   exemplo.innerHTML = localStorage.cadastro;
 }
+exemplo.innerHTML = localStorage.cadastro
