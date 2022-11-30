@@ -1,11 +1,16 @@
 const nome = document.querySelector('#nome');
 const email = document.querySelector('#email');
 const telefone = document.querySelector('#telefone');
-const textarea = document.querySelector('#textarea')
-const enviar = document.querySelector('#enviar')
+const textarea = document.querySelector('#textarea');
+const enviar = document.querySelector('#enviar');
+const exemplo = document.querySelector('.exemplo');
 
-console.log(nome, email, telefone, textarea, enviar)
-
-let dados = {'nome': nome.value, 'email': email.value, 'telefone': telefone.value, 'textarea': textarea.value};
-
-console.log(dados)
+function enviarMensagem() {
+  if (localStorage.cont) {
+    localStorage.cont = Number(localStorage.cont) + 1;
+  } else {
+    localStorage.cont = 1;
+  }
+  cadastro = document.getElementById('nome').value + ';' + document.getElementById('email').value + ';' + document.getElementById('telefone').value + ';' + document.getElementById('textarea').value;
+  localStorage.setItem("cadastro_" + localStorage.cont, cadastro)
+}
