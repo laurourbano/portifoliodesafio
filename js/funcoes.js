@@ -11,10 +11,13 @@ const rtextarea = document.querySelector('#rtextarea');
 const dadosMensagem = document.querySelector('#dadosMensagem')
 
 function enviarMensagem() {
-  localStorage.setItem("nome", document.formContato.nome.value)
-  localStorage.setItem("email", document.formContato.email.value)
-  localStorage.setItem("telefone", document.formContato.telefone.value)
-  localStorage.setItem("textarea", document.formContato.textarea.value)
+  [{
+    nome: localStorage.setItem("nome", document.formContato.nome.value),
+    email: localStorage.setItem("email", document.formContato.email.value),
+    telefone: localStorage.setItem("telefone", document.formContato.telefone.value),
+    textarea: localStorage.setItem("textarea", document.formContato.textarea.value)
+  }]
+
 }
 
 rnome.innerHTML = `Nome: ${localStorage.getItem("nome")}`
