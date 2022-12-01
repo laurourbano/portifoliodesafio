@@ -9,6 +9,7 @@ const remail = document.querySelector('#remail');
 const rtelefone = document.querySelector('#rtelefone');
 const rtextarea = document.querySelector('#rtextarea');
 const dadosMensagem = document.querySelector('#dadosMensagem')
+<<<<<<< Updated upstream
 
 const inputObjeto = [
   {
@@ -20,6 +21,9 @@ const inputObjeto = [
 
 alert(inputObjeto[0].telefone)
 
+=======
+con
+>>>>>>> Stashed changes
 function enviarMensagem() {
   [{
     nome: localStorage.setItem("nome", document.formContato.nome.value),
