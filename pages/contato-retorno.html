@@ -27,7 +27,7 @@
 
   <body>
     <!-- Cabeçalho -->
-    <header>
+    <header class="invisible">
       <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand logo" href="../index.html">Lauro Urbano</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -80,21 +80,23 @@
       </nav>
     </header>
 
-    <main class="text-white-50">
-      <div id="data"></div>
-      <h3>Abaixo estão os dados de sua mensagem:</h3>
-      <button onclick="apagar()" class="btn btn-danger"><i class="fa fa-trash"></i></button>
-      <button onclick="voltar()" class="btn btn-secondary">voltar</button>
-      <div id="dadosMensagem">
-        <p id="rnome"></p>
-        <p id="remail"></p>
-        <p id="rtelefone"></p>
-        <p id="rtextarea"></p>
+    <main class="text-white-50 d-flex flex-column justify-content-center">
+      <div class="container">
+        <div id="data"></div>
+        <h3>Abaixo estão os dados de sua mensagem:</h3>
+        <button onclick="apagar()" class="btn btn-danger"><i class="fa fa-trash"></i></button>
+        <button onclick="voltar()" class="btn btn-secondary">voltar</button>
+        <div id="dadosMensagem">
+          <p id="rnome"></p>
+          <p id="remail"></p>
+          <p id="rtelefone"></p>
+          <p id="rtextarea"></p>
+        </div>
       </div>
     </main>
 
     <!-- ⁡⁢⁣⁢Rodapé ⁡-->
-    <footer class="">
+    <footer class="invisible">
       <div class="container text-center">
         <div class="btn-group" role="group" aria-label="Links">
           <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
