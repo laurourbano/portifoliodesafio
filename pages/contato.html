@@ -92,23 +92,23 @@
       <div class="text-white-50 row d-flex justify-content-around mx-auto w-100">
         <h2 class="mb-4 border-bottom p-2 w-100">Entre em contato conosco.</h2>
 
-        <!-------------------------------------------------------------------------------------------------------->
-        <!------------------ NÃO ESQUECER DE MUDAR O ACTION PARA A URL CORRETA APÓS O DEPLOY --------------------->
-        <!-------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------------------------------------------>
+        <!-------- NÃO ESQUECER DE MUDAR O ACTION PARA A URL CORRETA APÓS O DEPLOY ----------->
+        <!------------------------------------------------------------------------------------>
 
-        <form name="formularioDeContato" action="http://127.0.0.1:5501/pages/contato-retorno.html" onsubmit="return validateForm()" method="get"
-          class="col-lg-6 w-100 mb-2">
+        <form name="formContato" action="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html"
+          onsubmit="return validateForm()" method="POST" class="col-lg-6 w-100 mb-2">
           <div class="form-group">
             <label for="nome">Nome</label>
-            <input type="text" class="form-control input" id="nome" placeholder="Nome" required>
+            <input name="nome" type="text" class="form-control input" id="nome" placeholder="Nome" required>
           </div>
           <div class="form-group">
             <label for="email">Endereço de email</label>
-            <input type="email" class="form-control input" id="email" placeholder="Seu email" required>
+            <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
           </div>
           <div class="form-group">
             <label for="telefone">Telefone</label>
-            <input type="tel" class="form-control input" id="telefone" placeholder="Seu Telefone"
+            <input name="telefone" type="tel" class="form-control input" id="telefone" placeholder="Seu Telefone"
               aria-describedby="Informacao" required>
             <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
               ninguém.</small>
@@ -118,7 +118,8 @@
             <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Sua mensagem"
               required></textarea>
           </div>
-          <button type="submit" onclick="enviarMensagem()" class="btn btn-primary w-50">Enviar</button>
+          <button type="submit" onclick="enviarMensagem(), renderizarMensagem()"
+            class="btn btn-primary w-50">Enviar</button>
         </form>
 
         <div id="exemplo"></div>

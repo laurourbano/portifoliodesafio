@@ -5,14 +5,34 @@ const textarea = document.querySelector('#textarea');
 const enviar = document.querySelector('#enviar');
 const exemplo = document.querySelector('#exemplo');
 
+const rnome = document.querySelector('#rnome');
+const remail = document.querySelector('#remail');
+const rtelefone = document.querySelector('#rtelefone');
+const rtextarea = document.querySelector('#rtextarea');
+const dadosMensagem = document.querySelector('#dadosMensagem')
+
 function enviarMensagem() {
-  if (localStorage.cont) {
-    localStorage.cont = Number(localStorage.cont) + 1;
-  } else {
-    localStorage.cont = 1;
-  }
-  cadastro = document.getElementById('nome').value + ';' + document.getElementById('email').value + ';' + document.getElementById('telefone').value + ';' + document.getElementById('textarea').value;
-  localStorage.setItem("cadastro_" + localStorage.cont, cadastro);
-  exemplo.innerHTML = localStorage.cadastro;
+  localStorage.setItem("nome", document.formContato.nome.value)
+  localStorage.setItem("email", document.formContato.email.value)
+  localStorage.setItem("telefone", document.formContato.telefone.value)
+  localStorage.setItem("textarea", document.formContato.textarea.value)
 }
-exemplo.innerHTML = 'quantidade de cadastros: ' + localStorage.length
+
+rnome.innerHTML = `Nome: ${localStorage.getItem("nome")}`
+remail.innerHTML = `E-mail: ${localStorage.getItem("email")}`
+rtelefone.innerHTML = `Telefone: ${localStorage.getItem("telefone")}`
+rtextarea.innerHTML = `Texto da Mensagem: ${localStorage.getItem("textarea")
+}`
+
+function apagar() {
+  if (confirm("deseja realmente apagar?")) {
+    localStorage.removeItem("nome")
+    localStorage.removeItem("email")
+    localStorage.removeItem("telefone")
+    localStorage.removeItem("textarea")
+    dadosMensagem.innerHTML = ""
+  } else {
+    return
+  }
+
+}
