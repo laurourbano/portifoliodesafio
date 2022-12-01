@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!-- CSS global  <link rel="stylesheet" href="../css/style.css">
-  -->
+    <!-- CSS global -->
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- Ícone do site -->
     <link rel="shortcut icon" href="../assets/favicon/desenvolvimento-web.png" type="image/x-icon">
@@ -80,10 +80,10 @@
       </nav>
     </header>
 
-    <main>
+    <main class="text-white-50">
       <div id="data"></div>
       <h3>Abaixo estão os dados de sua mensagem:</h3>
-      <button onclick="apagar(), confirmarLimpar()" class="btn btn-danger">apagar</button>
+      <button onclick="apagar()" class="btn btn-danger"><i class="fa fa-trash"></i></button>
       <button onclick="voltar()" class="btn btn-secondary">voltar</button>
       <div id="dadosMensagem">
         <p id="rnome"></p>
@@ -91,8 +91,36 @@
         <p id="rtelefone"></p>
         <p id="rtextarea"></p>
       </div>
-
     </main>
+
+    <!-- ⁡⁢⁣⁢Rodapé ⁡-->
+    <footer class="">
+      <div class="container text-center">
+        <div class="btn-group" role="group" aria-label="Links">
+          <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
+            <a href="https://www.linkedin.com/in/laurourbano" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-linkedin-in text-info"></i></a>
+          </button>
+          <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
+            <a href="https://github.com/laurourbano" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-github text-white-50"></i></a>
+          </button>
+          <button type="button" class="btn btn-outline-dark rounded-circle mr-3">
+            <a href="https://twitter.com/UrbanoOtavio" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-square-twitter text-info"></i></a>
+          </button>
+          <button type="button" class="btn btn-outline-dark rounded-circle">
+            <a href="https://www.instagram.com/lauro_otavio/" target="_blank" rel="noopener noreferrer"><i
+                class="fa-brands fa-instagram text-danger"></i></a>
+          </button>
+        </div>
+
+        <!-- ⁡⁢⁣⁢Criação ⁡-->
+        <div>
+          <small class="text-muted"> Página criada por Lauro Otávio Urbano</small>
+        </div>
+      </div>
+    </footer>
 
 
     <!-- JavaScript (Opcional) -->
