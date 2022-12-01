@@ -3,7 +3,6 @@ const email = document.querySelector('#email');
 const telefone = document.querySelector('#telefone');
 const textarea = document.querySelector('#textarea');
 const enviar = document.querySelector('#enviar');
-const exemplo = document.querySelector('#exemplo');
 
 const rnome = document.querySelector('#rnome');
 const remail = document.querySelector('#remail');
