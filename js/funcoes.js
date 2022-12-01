@@ -10,6 +10,16 @@ const rtelefone = document.querySelector('#rtelefone');
 const rtextarea = document.querySelector('#rtextarea');
 const dadosMensagem = document.querySelector('#dadosMensagem')
 
+const inputObjeto = [
+  {
+    nome: document.formContato.nome.value,
+    email: document.formContato.email.value,
+    telefone: document.formContato.telefone.value,
+    textarea: document.formContato.textarea.value
+  }]
+
+alert(inputObjeto[0].telefone)
+
 function enviarMensagem() {
   [{
     nome: localStorage.setItem("nome", document.formContato.nome.value),
