@@ -1,4 +1,4 @@
-class Cadastro {
+class Mensagem {
 
   constructor() {
     this.id = 1;
@@ -6,14 +6,14 @@ class Cadastro {
     this.email = '';
     this.telefone = '';
     this.textarea = '';
-    this.arrayCadastros = [];
+    this.arrayMensagens = [];
   }
 
   salvar() {
-    let cadastro = this.lerDados();
+    let mensagem = this.lerDados();
 
-    if (this.validaCampos(cadastro)) {
-      this.adicionar(cadastro);
+    if (this.validaCampos(mensagem)) {
+      this.adicionar(mensagem);
     }
 
     this.listarDados();
@@ -23,41 +23,52 @@ class Cadastro {
   listarDados() {
     let dadosMensagem = document.querySelector("#dadosMensagem");
 
-    for (let i = 0; i < this.arrayCadastros.length; i++) {
-      
+    for (let i = 0; i < this.arrayMensagens.length; i++) {
+//verificar
+      // Criar elemento
+      var conteudo = document.createElement('p');
+
+      // Criar o nó de texto
+      var texto = document.createTextNode("Um título qualquer");
+
+      // Anexar o nó de texto ao elemento h1
+      conteudo.appendChild(texto);
+
+      // Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
+      elemento_pai.appendChild(conteudo);
     }
   }
 
-  adicionar(cadastro) {
-    this.arrayCadastros.push(cadastro);
+  adicionar(mensagem) {
+    this.arrayMensagens.push(mensagem);
     this.id++;
   }
 
   lerDados() {
-    let cadastro = {}
+    let mensagem = {}
 
-    cadastro.id = this.id;
-    cadastro.nome = document.formContato.nome.value;
-    cadastro.email = document.formContato.email.value;
-    cadastro.telefone = document.formContato.telefone.value;
-    cadastro.textarea = document.formContato.textarea.value;
+    mensagem.id = this.id;
+    mensagem.nome = document.formContato.nome.value;
+    mensagem.email = document.formContato.email.value;
+    mensagem.telefone = document.formContato.telefone.value;
+    mensagem.textarea = document.formContato.textarea.value;
 
-    return cadastro;
+    return mensagem;
   }
 
-  validaCampos(cadastro) {
+  validaCampos(mensagem) {
     let msg = '';
 
-    if (cadastro.nome == '') {
+    if (mensagem.nome == '') {
       msg += "- Informe o seu nome \n";
     }
-    if (cadastro.email == '') {
+    if (mensagem.email == '') {
       msg += "- Informe o seu email \n";
     }
-    if (cadastro.telefone == '') {
+    if (mensagem.telefone == '') {
       msg += "- Informe o seu telefone \n";
     }
-    if (cadastro.textarea == '') {
+    if (mensagem.textarea == '') {
       msg += "- Escreva sua mensagem \n";
     }
     if (msg != '') {
@@ -72,4 +83,4 @@ class Cadastro {
   }
 }
 
-var cadastro = new Cadastro();
+var mensagem = new Mensagem();
