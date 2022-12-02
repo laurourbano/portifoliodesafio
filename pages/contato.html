@@ -98,8 +98,8 @@
 
         <!--action="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html"-->
 
-        <form name="formContato" target="_blank" action="http://127.0.0.1:5501/pages/contato-retorno.html"
-          onsubmit="return validateForm()" method="get" class="col-lg-6 w-100 mb-2" min-lenght="3" max-length="100">
+        <form name="formContato" target="_blank" action="http://127.0.0.1:5501/pages/contato-retorno.html" method="get"
+          class="col-lg-6 w-100 mb-2">
           <div class="form-group">
             <label for="nome">Nome</label>
             <input name="nome" type="text" class="form-control input" id="nome" placeholder="Nome" required>
@@ -120,8 +120,7 @@
             <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Sua mensagem"
               required></textarea>
           </div>
-          <button type="submit" onclick="enviarMensagem(), renderizarMensagem()"
-            class="btn btn-primary w-50">Enviar</button>
+          <button type="submit" onclick="cadastro.salvar()" class="btn btn-primary w-50">Enviar</button>
         </form>
 
         <section class="col-lg-5 ml-0 mt-2">

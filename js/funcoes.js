@@ -1,54 +1,75 @@
-const nome = document.querySelector('#nome');
-const email = document.querySelector('#email');
-const telefone = document.querySelector('#telefone');
-const textarea = document.querySelector('#textarea');
-const enviar = document.querySelector('#enviar');
+class Cadastro {
 
-const rnome = document.querySelector('#rnome');
-const remail = document.querySelector('#remail');
-const rtelefone = document.querySelector('#rtelefone');
-const rtextarea = document.querySelector('#rtextarea');
-const dadosMensagem = document.querySelector('#dadosMensagem')
-<<<<<<< Updated upstream
-
-const inputObjeto = [
-  {
-    nome: document.formContato.nome.value,
-    email: document.formContato.email.value,
-    telefone: document.formContato.telefone.value,
-    textarea: document.formContato.textarea.value
-  }]
-
-alert(inputObjeto[0].telefone)
-
-=======
-con
->>>>>>> Stashed changes
-function enviarMensagem() {
-  [{
-    nome: localStorage.setItem("nome", document.formContato.nome.value),
-    email: localStorage.setItem("email", document.formContato.email.value),
-    telefone: localStorage.setItem("telefone", document.formContato.telefone.value),
-    textarea: localStorage.setItem("textarea", document.formContato.textarea.value)
-  }]
-
-}
-
-rnome.innerHTML = `Nome: ${localStorage.getItem("nome")}`
-remail.innerHTML = `E-mail: ${localStorage.getItem("email")}`
-rtelefone.innerHTML = `Telefone: ${localStorage.getItem("telefone")}`
-rtextarea.innerHTML = `Texto da Mensagem: ${localStorage.getItem("textarea")
-}`
-
-function apagar() {
-  if (confirm("deseja realmente apagar?")) {
-    localStorage.removeItem("nome")
-    localStorage.removeItem("email")
-    localStorage.removeItem("telefone")
-    localStorage.removeItem("textarea")
-    dadosMensagem.innerHTML = ""
-  } else {
-    return
+  constructor() {
+    this.id = 1;
+    this.nome = '';
+    this.email = '';
+    this.telefone = '';
+    this.textarea = '';
+    this.arrayCadastros = [];
   }
 
+  salvar() {
+    let cadastro = this.lerDados();
+
+    if (this.validaCampos(cadastro)) {
+      this.adicionar(cadastro);
+    }
+
+    this.listarDados();
+
+  }
+
+  listarDados() {
+    let dadosMensagem = document.querySelector("#dadosMensagem");
+
+    for (let i = 0; i < this.arrayCadastros.length; i++) {
+      
+    }
+  }
+
+  adicionar(cadastro) {
+    this.arrayCadastros.push(cadastro);
+    this.id++;
+  }
+
+  lerDados() {
+    let cadastro = {}
+
+    cadastro.id = this.id;
+    cadastro.nome = document.formContato.nome.value;
+    cadastro.email = document.formContato.email.value;
+    cadastro.telefone = document.formContato.telefone.value;
+    cadastro.textarea = document.formContato.textarea.value;
+
+    return cadastro;
+  }
+
+  validaCampos(cadastro) {
+    let msg = '';
+
+    if (cadastro.nome == '') {
+      msg += "- Informe o seu nome \n";
+    }
+    if (cadastro.email == '') {
+      msg += "- Informe o seu email \n";
+    }
+    if (cadastro.telefone == '') {
+      msg += "- Informe o seu telefone \n";
+    }
+    if (cadastro.textarea == '') {
+      msg += "- Escreva sua mensagem \n";
+    }
+    if (msg != '') {
+      alert(msg);
+      return false
+    }
+    return true
+  }
+
+  cancelar() {
+    return
+  }
 }
+
+var cadastro = new Cadastro();
