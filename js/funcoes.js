@@ -16,26 +16,14 @@ class Mensagem {
       this.adicionar(mensagem);
     }
 
-    this.listarDados();
-
+    this.listarDados(mensagem);
   }
 
   listarDados() {
     let dadosMensagem = document.querySelector("#dadosMensagem");
 
     for (let i = 0; i < this.arrayMensagens.length; i++) {
-//verificar
-      // Criar elemento
-      var conteudo = document.createElement('p');
 
-      // Criar o nó de texto
-      var texto = document.createTextNode("Um título qualquer");
-
-      // Anexar o nó de texto ao elemento h1
-      conteudo.appendChild(texto);
-
-      // Agora sim, inserir (anexar) o elemento filho (titulo) ao elemento pai (body)
-      elemento_pai.appendChild(conteudo);
     }
   }
 
