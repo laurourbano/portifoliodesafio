@@ -54,6 +54,10 @@ class Mensagem {
 
   //transformar os objetos vindos do array de mensagens para json 'let json = JSON.stringfy(mensagem);';
 
+  //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
+
+  //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(json)' e 'mensagemRecuperada = JSON.parse(mensagemRecuperada)
+
   //captura os dados dos inputs e associa aos atributos do construtor para utilizar em outras partes do código;
 
   lerDados() {
