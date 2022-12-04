@@ -23,7 +23,7 @@ class Mensagem {
       this.adicionar(mensagem);
     };
 
-    this.listaMensagens(mensagem);
+    this.listaMensagens();
 
   }
 
@@ -33,7 +33,23 @@ class Mensagem {
 
     for (let i = 0; i < this.arrayMensagens.length; i++) {
 
+      //capturar o elemento pai;
+
+      let paiEl = document.querySelector('#dadosMensagem');
+      console.log(paiEl)
+
+      //criar elemento filho;
+
+      let filhoEl = document.createElement('p');
+
+      //colocar o conteúdo no elemento filho;
+
+      filhoEl.innerHTML = `${mensagem.nome}`;
+
       //inserir elemento(s) com os dados dos inputs e mensagem;
+
+      paiEl.appendChild(filhoEl);
+
 
       //ver como fazer o loop renderizar o conteúdo na nova página;
 
@@ -76,14 +92,14 @@ class Mensagem {
 
   //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
 
-  armazenamentoLocal(){
+  armazenamentoLocal() {
     let armazenaObjeto = localStorage.setItem(stringMensagem);
     return armazenaObjeto
   };
 
   //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(JSON.parse(json))';
 
-  recuperaJson(){
+  recuperaJson() {
     let mensagemRecuperada = localStorage.getItem(JSON.parse(armazenaObjeto));
   };
 
