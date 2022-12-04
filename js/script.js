@@ -21,3 +21,5 @@ let idade = atual - nascimento;
 function voltar() {
   window.history.back();
 }
+
+console.log('mensagemTela')

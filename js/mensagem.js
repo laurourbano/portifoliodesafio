@@ -30,33 +30,10 @@ class Mensagem {
   //método criado para renderizar o conteúdo das mensagens na nova página;
 
   listaMensagens() {
-
-    for (let i = 0; i < this.arrayMensagens.length; i++) {
-
-      //capturar o elemento pai;
-
-      let paiEl = document.querySelector('#dadosMensagem');
-      console.log(paiEl)
-
-      //criar elemento filho;
-
-      let filhoEl = document.createElement('p');
-
-      //colocar o conteúdo no elemento filho;
-
-      filhoEl.innerHTML = `${mensagem.nome}`;
-
-      //inserir elemento(s) com os dados dos inputs e mensagem;
-
-      paiEl.appendChild(filhoEl);
-
-
-      //ver como fazer o loop renderizar o conteúdo na nova página;
-
-      //renderizar o conteudo com botão de limpar ou fazer um botao unico na nova página;
-
-    };
-
+    let mensagemTela = document.querySelector('#dadosMensagem');
+    let p = document.createElement('p');
+    p.innerHTML = 'lauro'
+    mensagemTela.appendChild(p.innerHTML)
   }
 
   //captura os dados dos inputs e associa aos atributos do construtor para utilizar em outras partes do código;
@@ -86,21 +63,22 @@ class Mensagem {
   //transformar os objetos vindos do array de mensagens para json 'let json = JSON.stringfy(mensagem);';
 
   jsonString(mensagem) {
-    let stringMensagem = JSON.stringfy(mensagem)
-    return stringMensagem
+    let stringMensagem = JSON.stringfy(mensagem);
+    return stringMensagem;
   };
 
   //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
 
-  armazenamentoLocal() {
+  armazenamentoLocal(stringMensagem) {
     let armazenaObjeto = localStorage.setItem(stringMensagem);
-    return armazenaObjeto
+    return armazenaObjeto;
   };
 
   //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(JSON.parse(json))';
 
-  recuperaJson() {
+  recuperaJson(armazenaObjeto) {
     let mensagemRecuperada = localStorage.getItem(JSON.parse(armazenaObjeto));
+    return mensagemRecuperada;
   };
 
   //verifica se os inputs não estão vazios;
