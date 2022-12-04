@@ -43,21 +43,6 @@ class Mensagem {
 
   }
 
-  //método que adiciona as novas mensagens no array de mensagens e incrementa o id;
-
-  adicionar(mensagem) {
-
-    this.arrayMensagens.push(mensagem);
-    this.id++;
-
-  }
-
-  //transformar os objetos vindos do array de mensagens para json 'let json = JSON.stringfy(mensagem);';
-
-  //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
-
-  //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(json)' e 'mensagemRecuperada = JSON.parse(mensagemRecuperada)
-
   //captura os dados dos inputs e associa aos atributos do construtor para utilizar em outras partes do código;
 
   lerDados() {
@@ -71,6 +56,35 @@ class Mensagem {
     mensagem.textarea = document.formContato.textarea.value;
     return mensagem;
 
+  };
+
+  //método que adiciona as novas mensagens no array de mensagens e incrementa o id;
+
+  adicionar(mensagem) {
+
+    this.arrayMensagens.push(mensagem);
+    this.id++;
+
+  };
+
+  //transformar os objetos vindos do array de mensagens para json 'let json = JSON.stringfy(mensagem);';
+
+  jsonString(mensagem) {
+    let stringMensagem = JSON.stringfy(mensagem)
+    return stringMensagem
+  };
+
+  //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
+
+  armazenamentoLocal(){
+    let armazenaObjeto = localStorage.setItem(stringMensagem);
+    return armazenaObjeto
+  };
+
+  //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(JSON.parse(json))';
+
+  recuperaJson(){
+    let mensagemRecuperada = localStorage.getItem(JSON.parse(armazenaObjeto));
   };
 
   //verifica se os inputs não estão vazios;
