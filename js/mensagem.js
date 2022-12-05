@@ -27,8 +27,7 @@ function mostrarItens() {
   for (let i in arr) {
     let div = document.createElement('div');
     let p = document.createElement('p');
-    p.innerHTML = arr[i];
-    console.log(arr[i])
+    p.innerHTML = arr.nome[i];
     div.append(p);
     mensagens.append(div);
   };
