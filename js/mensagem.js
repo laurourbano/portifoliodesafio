@@ -32,8 +32,7 @@ function mostrarItens() {
 
   for (let i in arr) {
     let p = document.createElement('p');
-    p.innerHTML = "Nome: " + arr[i].nome + '<br> Telefone: ' + arr[i].telefone +
-      +'<br> E-mail: ' + arr[i].email + '<br> Mensagem enviada: ' + arr[i].textarea;
+    p.innerHTML = "Nome: " + arr[i].nome + '<br> Telefone: ' + arr[i].telefone + '<br> E-mail: ' + arr[i].email + '<br> Mensagem enviada: ' + arr[i].textarea;
     mensagens.append(p);
     p.classList.add('border', 'border-secondary', 'p-2', 'my-2')
   };
