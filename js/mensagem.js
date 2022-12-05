@@ -20,7 +20,9 @@ function mostrarItens() {
     arr = JSON.parse(localStorage.getItem('meuArr'));
   };
 
+  //iterar para criar isso em loop
   let ul = document.createElement('ul');
+  
 
   for (let i in arr) {
     let li = document.createElement('li');
