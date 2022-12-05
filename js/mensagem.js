@@ -32,7 +32,7 @@ class Mensagem {
   listaMensagens() {
     let mensagemTela = document.querySelector('#dadosMensagem');
     let p = document.createElement('p');
-    p.innerHTML = 'lauro'
+    p.innerHTML = mensagemRecuperada.nome[0]
     mensagemTela.appendChild(p.innerHTML)
   }
 
@@ -56,29 +56,14 @@ class Mensagem {
   adicionar(mensagem) {
 
     this.arrayMensagens.push(mensagem);
+    let armazenaObjeto = localStorage.setItem(JSON.stringfy(mensagem));
+    console.log(typeof armazenaObjeto)
+
+    let mensagemRecuperada = localStorage.getItem(JSON.parse(armazenaObjeto));
+    console.log(typeof mensagemRecuperada)
+
     this.id++;
 
-  };
-
-  //transformar os objetos vindos do array de mensagens para json 'let json = JSON.stringfy(mensagem);';
-
-  jsonString(mensagem) {
-    let stringMensagem = JSON.stringfy(mensagem);
-    return stringMensagem;
-  };
-
-  //armazenar o json em formato string no localStorage 'let armazenamento = localStorage.setItem(json);
-
-  armazenamentoLocal(stringMensagem) {
-    let armazenaObjeto = localStorage.setItem(stringMensagem);
-    return armazenaObjeto;
-  };
-
-  //recuperar o JSON 'let mensagemRecuperada = localStorage.getItem(JSON.parse(json))';
-
-  recuperaJson(armazenaObjeto) {
-    let mensagemRecuperada = localStorage.getItem(JSON.parse(armazenaObjeto));
-    return mensagemRecuperada;
   };
 
   //verifica se os inputs não estão vazios;
