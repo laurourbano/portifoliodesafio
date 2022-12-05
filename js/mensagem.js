@@ -11,7 +11,10 @@ function adicionar() {
   objetoMensagem.textarea = document.getElementById('textarea').value;
   arr.push(objetoMensagem.nome, objetoMensagem.email, objetoMensagem.telefone, objetoMensagem.textarea);
   localStorage.meuArr = JSON.stringify(arr);
+  console.log(arr)
+
 };
+
 
 function mostrarItens() {
   let mensagens = document.getElementById('dadosMensagens');
