@@ -39,9 +39,12 @@ function mostrarItens() {
 };
 
 function excluir() {
-  arr = [];
-  localStorage.meuArr = JSON.stringify(arr)
-}
+  if (confirm('Deseja realmente limpar todas as mensagens enviadas?')) {
+    arr = [];
+    localStorage.meuArr = JSON.stringify(arr)
+  };
+  return
+};
 
 function cancelar() {
   document.getElementById('nome').value = "";
