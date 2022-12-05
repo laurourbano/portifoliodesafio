@@ -31,7 +31,6 @@ function mostrarItens() {
     console.log(arr[i])
     div.append(p);
     mensagens.append(div);
-    div.classList.add('border')
   };
 };
 
