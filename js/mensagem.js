@@ -11,7 +11,10 @@ function adicionar() {
   objetoMensagem.textarea = document.getElementById('textarea').value;
   arr.push(objetoMensagem.nome, objetoMensagem.email, objetoMensagem.telefone, objetoMensagem.textarea);
   localStorage.meuArr = JSON.stringify(arr);
+  console.log(arr)
+
 };
+
 
 function mostrarItens() {
   let mensagens = document.getElementById('dadosMensagens');
@@ -20,14 +23,12 @@ function mostrarItens() {
     arr = JSON.parse(localStorage.getItem('meuArr'));
   };
 
-  let ul = document.createElement('ul');
-
   for (let i in arr) {
-    let li = document.createElement('li');
-    li.innerHTML = arr[i];
-    ul.append(li);
-    mensagens.append(ul);
+    let p = document.createElement('p');
+    p.innerHTML = arr[i];
+    mensagens.append(p);
   };
+
 };
 
 
