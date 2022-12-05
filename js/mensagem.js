@@ -26,6 +26,7 @@ function adicionar() {
 function mostrarItens() {
   let mensagens = document.getElementById('dadosMensagens');
   mensagens.innerHTML = '';
+  
   if (localStorage.meuArr) {
     arr = JSON.parse(localStorage.getItem('meuArr'));
   };
