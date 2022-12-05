@@ -20,14 +20,16 @@ function mostrarItens() {
     arr = JSON.parse(localStorage.getItem('meuArr'));
   };
 
+  let ul = document.createElement('ul');
+
   for (let i in arr) {
-    let ul = document.createElement('ul');
     let li = document.createElement('li');
     li.innerHTML = arr[i];
     ul.append(li);
     mensagens.append(ul);
   };
 };
+
 
 function excluir() {
   arr = [];
