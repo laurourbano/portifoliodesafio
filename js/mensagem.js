@@ -10,10 +10,6 @@ function adicionar() {
   objetoMensagem.telefone = document.getElementById('telefone').value;
   objetoMensagem.textarea = document.getElementById('textarea').value;
   arr.push(objetoMensagem.nome, objetoMensagem.email, objetoMensagem.telefone, objetoMensagem.textarea);
-  //document.getElementById('nome').value = "";
-  //document.getElementById('email').value = "";
-  //document.getElementById('telefone').value = "";
-  //document.getElementById('textarea').value = "";
   localStorage.meuArr = JSON.stringify(arr);
 };
 
@@ -36,4 +32,13 @@ function mostrarItens() {
 function excluir() {
   arr = [];
   localStorage.meuArr = JSON.stringify(arr)
+}
+
+function cancelar() {
+  document.getElementById('nome').value = "";
+  document.getElementById('email').value = "";
+  document.getElementById('telefone').value = "";
+  document.getElementById('textarea').value = "";
+
+  return
 }
