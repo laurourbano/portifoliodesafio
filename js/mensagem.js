@@ -25,11 +25,13 @@ function mostrarItens() {
   };
 
   for (let i in arr) {
+    let div = document.createElement('div');
     let p = document.createElement('p');
     p.innerHTML = arr[i];
     console.log(arr[i])
-    mensagens.append(p);
-    p.classList.add('border')
+    div.append(p);
+    mensagens.append(div);
+    div.classList.add('border')
   };
 };
 
