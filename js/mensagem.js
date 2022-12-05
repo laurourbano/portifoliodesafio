@@ -9,10 +9,12 @@ function adicionar() {
   objetoMensagem.email = document.getElementById('email').value;
   objetoMensagem.telefone = document.getElementById('telefone').value;
   objetoMensagem.textarea = document.getElementById('textarea').value;
-  arr.push(objetoMensagem.nome, objetoMensagem.email, objetoMensagem.telefone, objetoMensagem.textarea);
-  localStorage.meuArr = JSON.stringify(arr);
-  console.log(arr)
 
+  //MELHORAR ESSE TRECHO - PASSAR COMO OBJETO COM LOOP
+  for (let i in arr) {
+    arr[i].push(objetoMensagem);
+    localStorage.meuArr = JSON.stringify(arr);
+  }
 };
 
 
