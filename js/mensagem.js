@@ -20,16 +20,12 @@ function mostrarItens() {
     arr = JSON.parse(localStorage.getItem('meuArr'));
   };
 
-  //iterar para criar isso em loop
-  let ul = document.createElement('ul');
-  
-
   for (let i in arr) {
-    let li = document.createElement('li');
-    li.innerHTML = arr[i];
-    ul.append(li);
-    mensagens.append(ul);
+    let p = document.createElement('p');
+    p.innerHTML = arr[i];
+    mensagens.append(p);
   };
+
 };
 
 
