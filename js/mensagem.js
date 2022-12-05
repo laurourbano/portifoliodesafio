@@ -10,13 +10,15 @@ function adicionar() {
   objetoMensagem.telefone = document.getElementById('telefone').value;
   objetoMensagem.textarea = document.getElementById('textarea').value;
 
-  //MELHORAR ESSE TRECHO - PASSAR COMO OBJETO COM LOOP
-  for (let i in arr) {
-    arr[i].push(objetoMensagem);
-    localStorage.meuArr = JSON.stringify(arr);
-  }
+  arr.push(objetoMensagem);
+
+  localStorage.meuArr = JSON.stringify(arr);
+
 };
 
+function meuObjeto(arg) {
+  return arg
+}
 
 function mostrarItens() {
   let mensagens = document.getElementById('dadosMensagens');
@@ -27,12 +29,14 @@ function mostrarItens() {
 
   for (let i in arr) {
     let p = document.createElement('p');
-    p.innerHTML = arr[i];
+    p.innerHTML = "Nome: " + arr[i].nome + '<br> Telefone: ' + arr[i].telefone + '<br> E-mail: ' + arr[i].email + '<br> Mensagem enviada: ' + arr[i].textarea;
     mensagens.append(p);
+    p.classList.add('border', 'border-secondary', 'p-2', 'my-2')
   };
+  alert(arr.nome[i]);
+
 
 };
-
 
 function excluir() {
   arr = [];
