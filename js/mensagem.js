@@ -36,8 +36,6 @@ function mostrarItens() {
     mensagens.append(p);
     p.classList.add('border', 'border-secondary', 'p-2', 'my-2')
   };
-  alert(arr.nome[i]);
-
 
 };
 
