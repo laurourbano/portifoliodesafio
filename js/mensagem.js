@@ -20,13 +20,12 @@ function adicionar() {
   } else {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
-  }
-  event.preventDefault()
-
-  setTimeout(function(){
-    document.querySelector('.invisible').classList.add('visible');
+}
+setTimeout(function(){
+    let sucesso = document.querySelector('.alert-sucess');
+    sucesso.innerHTML = "<div class='alert alert-success' role='alert'>Um simples alerta success. Olha só!</div>";
   }, 3 * 1000);
-
+  event.preventDefault()
 };
 
 function mostrarItens() {
