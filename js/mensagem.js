@@ -20,12 +20,21 @@ function adicionar() {
   } else {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
-}
-setTimeout(function(){
-    let sucesso = document.querySelector('.alert-sucess');
-    sucesso.innerHTML = "<div class='alert alert-success' role='alert'>Um simples alerta success. Olha só!</div>";
-  }, 3 * 1000);
-  event.preventDefault()
+    let sucesso = document.querySelector('.sucesso');
+    setTimeout(function () {
+      sucesso.innerHTML = "<div class='alert alert-success p-3 shadow border border-info m-5' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
+    }, 1 * 1000);
+    setTimeout(() => {
+      sucesso.innerHTML = "";
+    }, 5 * 1000);
+    event.preventDefault()
+    document.getElementById('nome').value = "";
+    document.getElementById('email').value = "";
+    document.getElementById('telefone').value = "";
+    document.getElementById('textarea').value = "";
+    document.getElementById('nome').focus();
+  }
+
 };
 
 function mostrarItens() {
@@ -51,12 +60,3 @@ function excluir() {
   };
   return
 };
-
-function cancelar() {
-  document.getElementById('nome').value = "";
-  document.getElementById('email').value = "";
-  document.getElementById('telefone').value = "";
-  document.getElementById('textarea').value = "";
-
-  return
-}
