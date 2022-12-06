@@ -21,6 +21,9 @@ function adicionar() {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
   }
+
+  //let invisible = document.ontoggle(click, '.invisible');
+  
 };
 
 function mostrarItens() {
