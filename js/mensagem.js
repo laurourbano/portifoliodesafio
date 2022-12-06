@@ -21,6 +21,12 @@ function adicionar() {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
   }
+  event.preventDefault()
+
+  setTimeout(function(){
+    document.querySelector('.invisible').classList.add('visible');
+  }, 3 * 1000);
+
 };
 
 function mostrarItens() {
@@ -36,8 +42,6 @@ function mostrarItens() {
     mensagens.append(p);
     p.classList.add('border', 'border-secondary', 'p-2', 'my-2')
   };
-  alert(arr.nome[i]);
-
 
 };
 
