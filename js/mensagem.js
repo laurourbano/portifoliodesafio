@@ -21,9 +21,12 @@ function adicionar() {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
   }
+  event.preventDefault()
 
-  //let invisible = document.ontoggle(click, '.invisible');
-  
+  setTimeout(function(){
+    document.querySelector('.invisible').classList.add('visible');
+  }, 3 * 1000);
+
 };
 
 function mostrarItens() {
