@@ -11,7 +11,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-size: 300% 300%;
+  background-size: 500% 500%;
   animation: transicao 7s ease-in-out infinite;
   position: relative;
   scroll-behavior: smooth;
@@ -54,6 +54,8 @@ a:hover, button:hover {
 }
 
 footer {
+  background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
+  min-height: 15vh;
   display: flex;
   align-items: center;
   position: relative;
@@ -67,5 +69,4 @@ footer{
 }
 header{
   border-bottom: 1px solid #555;
-
 }
