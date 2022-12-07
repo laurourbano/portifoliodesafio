@@ -32,6 +32,7 @@ function adicionar() {
     document.getElementById('email').value = "";
     document.getElementById('telefone').value = "";
     document.getElementById('textarea').value = "";
+    document.querySelector('.sucesso').focus();
     document.getElementById('nome').focus();
   };
 
