@@ -8,6 +8,10 @@
     height: 100vh;
 }
 .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     background: linear-gradient(-45deg, #1f1f27, #1f1f27, #103772, #315789);
     min-height: fit-content;
     padding: 3em;
@@ -21,7 +25,8 @@ p {
     font-weight: 500;
 }
 .wrapper a {
-    font-weight: 900;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 @media screen and (max-width:724px) {
