@@ -22,7 +22,7 @@ function adicionar() {
     localStorage.meuArr = JSON.stringify(arr);
     let sucesso = document.querySelector('.sucesso');
     setTimeout(function () {
-      sucesso.innerHTML = "<div class='alert alert-success p-3 shadow border border-info m-5' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
+      sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
     }, 1 * 1000);
     setTimeout(() => {
       sucesso.innerHTML = "";
@@ -33,7 +33,7 @@ function adicionar() {
     document.getElementById('telefone').value = "";
     document.getElementById('textarea').value = "";
     document.getElementById('nome').focus();
-  }
+  };
 
 };
 

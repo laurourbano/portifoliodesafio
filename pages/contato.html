@@ -88,51 +88,52 @@
   <!-- Conteúdo -->
   <main class="conteudo py-2">
     <div class="container">
-      <div class="data text-secondary small container" id="data"></div>
-      <div class="text-white-50 row d-flex justify-content-around mx-auto w-100">
-        <h2 class="mb-4 border-bottom p-2 w-100">Entre em contato conosco.</h2>
-
+      <div class="data text-secondary small" id="data"></div>
+      <div class="text-white-50 row d-flex justify-content-between mx-auto w-100">
+        <h3 class="mb-4 pt-1 w-100 position-relative">Gostou?! Envie uma mensagem.</h3>
         <!------------------------------------------------------------------------------------>
         <!-------- NÃO ESQUECER DE MUDAR O ACTION PARA A URL CORRETA APÓS O DEPLOY ----------->
         <!------------------------------------------------------------------------------------>
-
         <!--
           DESENVOLVIMENTO - http://127.0.0.1:5501/pages/contato-retorno.html
           DEPLOY - https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html
         -->
 
         <form name="formContato" action="" method="get" class="col-lg-6 w-100 mb-2 position-relative">
-          <div class="sucesso position-absolute">
-          </div>
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input name="nome" type="text" class="form-control input" id="nome" placeholder="Seu nome" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Endereço de email</label>
-            <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
-          </div>
-          <div class="form-group">
-            <label for="telefone">Celular / WhatsApp</label>
-            <input name="telefone" type="tel" class="form-control input" id="telefone" placeholder="(XX) 9XXXX-XXXX"
-              aria-describedby="Informacao" required>
-            <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
-              ninguém.</small>
-          </div>
-          <div class="form-group">
-            <label for="textArea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
-            <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Escreva aqui sua mensagem"
-              required></textarea>
-          </div>
-          <button title="Enviar mensagem" type="submit" onclick="adicionar(); mostrarItens()"
-            class="btn btn-primary w-100 my-1">
-            <i class="fa fa-play"></i> Enviar
-          </button>
-          <a class="btn btn-outline-light w-100 my-2 py-2 text-primary"
-            href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="blank">
-            <i class="fa-solid fa-envelopes-bulk text-primary"></i> Acessar mensagens
-          </a>
+          <div>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input name="nome" type="text" class="form-control input" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Endereço de email</label>
+              <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
+            </div>
+            <div class="form-group">
+              <label for="telefone">Celular / WhatsApp</label>
+              <input name="telefone" type="tel" class="form-control input" id="telefone" placeholder="(XX) 9XXXX-XXXX"
+                aria-describedby="Informacao" required>
+              <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
+                ninguém.</small>
+            </div>
+            <div class="form-group">
+              <div class="sucesso position-absolute">
+              </div>
+              <label for="textArea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
+              <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Escreva aqui sua mensagem"
+                required></textarea>
+            </div>
+            <button title="Enviar mensagem" type="submit" onclick="adicionar(); mostrarItens()"
+              class="btn btn-primary w-100 my-1">
+              <i class="fa fa-play"></i> Enviar
+            </button>
+            <a class="btn btn-outline-light my-2 w-100" id="mensagens-enviadas" title="Acessar mensagens enviadas"
+              href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="blank">
+              <i class="fa-solid fa-envelopes-bulk text-primary"></i>
+              Acessar mensagens enviadas
+            </a>
 
+          </div>
         </form>
 
         <section class="col-lg-5 ml-0 mt-2">
@@ -149,9 +150,11 @@
               rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
             <a class="d-block btn btn-outline-light mb-2" href="https://www.instagram.com/lauro_otavio/" target="_blank"
               rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i> Instagram</a>
+
           </div>
 
         </section>
+
         <div class="img-fluid container-iframe mt-2">
           <iframe class="responsive-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14422.50621678881!2d-49.1990754!3d-25.35030955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce881209c37f3%3A0xd3cf352ba28a8660!2sJardim%20Sao%20Gabriel%2C%20Colombo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1668548055283!5m2!1spt-BR!2sbr"
