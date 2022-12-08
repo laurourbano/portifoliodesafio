@@ -22,3 +22,6 @@ a{
   top: -5%;
   left: 25%;
 }
+textarea {
+  padding: 1em;
+}
