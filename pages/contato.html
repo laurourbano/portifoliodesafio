@@ -103,15 +103,15 @@
           class="col-lg-6 mb-2 position-relative shadow pl-0 rounded-right">
           <div>
             <div class="form-group">
-              <label class="" for="nome">Nome</label>
+              <label for="nome">Nome</label>
               <input name="nome" type="text" class="form-control input" id="nome" placeholder="Seu nome" required>
-              <small class="input text-danger"></small>
+              <small class="input-nome text-danger"></small>
             </div>
 
             <div class="form-group">
               <label for="email">Endereço de email</label>
               <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
-              <small class="input text-danger"></small>
+              <small class="input-email text-danger"></small>
             </div>
 
             <div class="form-group">
@@ -120,16 +120,16 @@
                 aria-describedby="Informacao" required>
               <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
                 ninguém.</small>
-              <small class="input text-danger"></small>
+              <small class="input-telefone text-danger"></small>
             </div>
 
             <div class="form-group">
               <div class="sucesso position-absolute">
               </div>
-              <label for="textArea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
+              <label for="textarea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
               <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Escreva aqui sua mensagem"
                 required></textarea>
-              <small class="input text-danger"></small>
+              <small class="input-textarea text-danger"></small>
             </div>
 
             <button title="Enviar mensagem" type="submit" onclick="adicionar(); mostrarItens()"

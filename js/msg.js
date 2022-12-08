@@ -11,7 +11,7 @@ class Mensagem {
 
   adicionar() {
     let mensagem = this.dadosFormulario();
-
+    
     console.log(mensagem)
   }
   dadosFormulario() {
@@ -25,12 +25,19 @@ class Mensagem {
   validaInputs() {
     let msg = '';
     if (objetoMensagem.nome.length === 0) {
-      let msgInput = document.querySelector('.input');
+      let msgInput = document.querySelector('#input-nome');
       msgInput.innerText = 'Digite o seu nome';
     } else if (objetoMensagem.email.length === 0){
-      let msgInput = document.querySelector('.input');
-      msgInput.innerText = 'Digite o seu nome';
-
+      let msgInput = document.querySelector('#input-email');
+      msgInput.innerText = 'Digite o seu e-mail';
+    } else if (objetoMensagem.email.length === 0){
+    let msgInput = document.querySelector('#input-telefone');
+    msgInput.innerText = 'Digite o seu telefone';
+    } else if (objetoMensagem.email.length === 0){
+    let msgInput = document.querySelector('#input-textarea');
+    msgInput.innerText = 'Digite sua mensagem';
+    } else {
+      
     }
 
   }
