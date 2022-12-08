@@ -91,11 +91,11 @@
       <div class="data text-secondary small" id="data"></div>
       <div class="text-white-50 row d-flex justify-content-between mx-auto w-100">
         <h3 class="mb-4 pt-1 w-100 position-relative">Gostou?! Envie uma mensagem.</h3>
-        
+
         <!------------------------------------------------------------------------------------>
         <!-------- NÃO ESQUECER DE MUDAR O ACTION PARA A URL CORRETA APÓS O DEPLOY ----------->
         <!------------------------------------------------------------------------------------>
-        
+
         <!--
           DESENVOLVIMENTO - http://127.0.0.1:5501/pages/contato-retorno.html
           DEPLOY - https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html
@@ -103,6 +103,11 @@
 
         <form name="formContato" action="" method="post"
           class="col-lg-6 mb-2 position-relative shadow pl-0 rounded-right">
+          <a class="btn btn-outline-light my-3 w-100" id="mensagens-enviadas" title="Acessar mensagens enviadas"
+            href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="_self">
+            <i class="fa fa-envelope text-primary"></i>
+            Acessar mensagens enviadas
+          </a>
           <div>
             <div class="form-group">
               <label class="" for="nome">Nome</label>
@@ -131,30 +136,26 @@
               <i class="fa fa-paper-plane"></i>
               Enviar
             </button>
-            <a class="btn btn-outline-light my-2 w-100" id="mensagens-enviadas" title="Acessar mensagens enviadas"
-              href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="_self">
-              <i class="fa fa-envelope text-primary"></i>
-              Acessar mensagens enviadas
-            </a>
-
           </div>
         </form>
 
         <section class="col-lg-6">
-          <h5 class="">Dados de contato</h5>
-          <a class="d-block text-white-50" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
-          <abbr title="Telefone/WhatsApp" class="d-block" href="tel:+5541998086077">+55(41)99808-6077</abbr>
-          <address class="d-block">Jardim São Gabriel - Colombo</address>
           <div class="d-block" role="group" aria-label="Links">
-            <a class="d-block btn btn-outline-light btn-lg mb-3" href="https://www.linkedin.com/in/laurourbano"
+            <a class="d-block btn btn-outline-light my-3" href="https://www.linkedin.com/in/laurourbano"
               target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i> Linkedin</a>
-            <a class="d-block btn btn-outline-light btn-lg mb-sm-3" href="https://github.com/laurourbano"
+            <a class="d-block btn btn-outline-light mb-sm-3" href="https://github.com/laurourbano"
               target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
-            <a class="d-block btn btn-outline-light btn-lg mb-3" href="https://twitter.com/UrbanoOtavio" target="_blank"
+            <a class="d-block btn btn-outline-light mb-3" href="https://twitter.com/UrbanoOtavio" target="_blank"
               rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
-            <a class="d-block btn btn-outline-light btn-lg mb-3" href="https://www.instagram.com/lauro_otavio/"
+            <a class="d-block btn btn-outline-light mb-3" href="https://www.instagram.com/lauro_otavio/"
               target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
               Instagram</a>
+          </div>
+          <div class="m-5 p-4 shadow rounded">
+            <h5 class="my-4">Dados de contato</h5>
+            <a class="d-block text-white my-4" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
+            <a class="d-block text-white my-4" href="tel:+5541998086077" title="Telefone/WhatsApp">+55(41)99808-6077</a>
+            <address class="d-block my-4">Jardim São Gabriel - Colombo</address>
           </div>
 
         </section>
