@@ -23,7 +23,6 @@ class Mensagem {
     objetoMensagem.textarea = document.forms.formContato.textarea.value;
   }
   validaInputs() {
-    let msg = '';
     if (objetoMensagem.nome.length === 0) {
       let msgInput = document.querySelector('#input-nome');
       msgInput.innerText = 'Digite o seu nome';
@@ -37,7 +36,8 @@ class Mensagem {
     let msgInput = document.querySelector('#input-textarea');
     msgInput.innerText = 'Digite sua mensagem';
     } else {
-      
+      this.arrayMensagens.push(objetoMensagem);
+      localStorage.meuArr
     }
 
   }
