@@ -21,9 +21,7 @@ function adicionar() {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
     let sucesso = document.querySelector('.sucesso');
-    setTimeout(function () {
-      sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
-    }, 1 * 1000);
+    sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
     setTimeout(() => {
       sucesso.innerHTML = "";
     }, 5 * 1000);
