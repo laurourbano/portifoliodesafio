@@ -1,0 +1,11 @@
+.empregos{
+  width: 100%;
+  min-height: 6em;
+  background: linear-gradient(-45deg, #315789, #103772, #282833, #24242e);
+  border-radius: 1em;
+  margin: 1em 0 1em 0;
+}
+h5 {
+  font-weight: 700;
+  color: #fbff15;
+}
