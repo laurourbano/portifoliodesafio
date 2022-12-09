@@ -59,3 +59,8 @@ function excluir() {
   };
   return
 };
+
+window.onload = new Cleave('#telefone', {
+  blocks: [0, 0, 2, 5, 4],
+  delimiters: ['+55', ' (', ')', '-'],
+});
