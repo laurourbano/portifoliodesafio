@@ -29,11 +29,12 @@ function adicionar() {
     document.getElementById('telefone').value = "";
     document.getElementById('textarea').value = "";
     document.querySelector('.sucesso').focus();
-    document.getElementById('nome').focus();
     setTimeout(() => {
       sucesso.innerHTML = "";
     }, 3 * 1000);
+    document.getElementById('nome').focus();
   };
+
 
 
 };
