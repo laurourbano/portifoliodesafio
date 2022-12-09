@@ -14,7 +14,7 @@ function adicionar() {
   } else if (objetoMensagem.email == '') {
     alert('Digite seu email')
   } else if (objetoMensagem.telefone == '') {
-    alert('Digite seu telefone')
+    alert('Digite seu telefone ')
   } else if (objetoMensagem.textarea == '') {
     alert('Digite sua mensagem')
   } else {
@@ -62,5 +62,5 @@ function excluir() {
 
 window.onload = new Cleave('#telefone', {
   blocks: [0, 0, 2, 5, 4],
-  delimiters: ['+55', ' (', ')', '-'],
+  delimiters: ['+55', '(', ')', '-'],
 });
