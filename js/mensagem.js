@@ -22,20 +22,20 @@ function adicionar() {
     localStorage.meuArr = JSON.stringify(arr);
     let sucesso = document.querySelector('.sucesso');
     sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
+    document.querySelector('.sucesso').focus();
+    setTimeout(() => {
+      sucesso.innerHTML = "";
+    }, 3 * 1000);
+
     event.preventDefault();
 
     document.getElementById('nome').value = "";
     document.getElementById('email').value = "";
     document.getElementById('telefone').value = "";
     document.getElementById('textarea').value = "";
-    document.querySelector('.sucesso').focus();
-    setTimeout(() => {
-      sucesso.innerHTML = "";
-    }, 3 * 1000);
     document.getElementById('nome').focus();
+
   };
-
-
 
 };
 
