@@ -115,12 +115,13 @@
             </div>
             <div class="form-group">
               <label for="email">Endereço de email</label>
-              <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
+              <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required
+                minlength="3" onkeyup="validateEmail()" />
             </div>
             <div class="form-group">
               <label for="telefone">Celular / WhatsApp</label>
-              <input name="telefone" type="tel" class="form-control input" id="telefone" placeholder="(XX) 9XXXX-XXXX"
-                aria-describedby="Informacao" required>
+              <input name="telefone" type="tel" class="form-control input" placeholder="(XX) 9XXXX-XXXX"
+                aria-describedby="Informacao" required maxlength="15" onkeyup="handlePhone(event)" />
               <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
                 ninguém.</small>
             </div>
@@ -141,14 +142,14 @@
 
         <section class="col-lg-6">
           <div class="d-block" role="group" aria-label="Links">
-            <a class="d-block btn btn-outline-light my-3" href="https://www.linkedin.com/in/laurourbano"
-              target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i> Linkedin</a>
-            <a class="d-block btn btn-outline-light mb-sm-3" href="https://github.com/laurourbano"
-              target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
+            <a class="d-block btn btn-outline-light my-3" href="https://www.linkedin.com/in/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i> Linkedin</a>
+            <a class="d-block btn btn-outline-light mb-sm-3" href="https://github.com/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
             <a class="d-block btn btn-outline-light mb-3" href="https://twitter.com/UrbanoOtavio" target="_blank"
               rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
-            <a class="d-block btn btn-outline-light mb-3" href="https://www.instagram.com/lauro_otavio/"
-              target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
+            <a class="d-block btn btn-outline-light mb-3" href="https://www.instagram.com/lauro_otavio/" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
               Instagram</a>
           </div>
           <div class="m-5 p-4 shadow rounded">
