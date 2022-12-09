@@ -4,7 +4,7 @@
 <head>
 
   <!-- Meta tag de Título da Página -->
-  <title>Lauro Urbano | Contato</title>
+  <title>Lauro Urbano | Contato.</title>
 
   <!-- Meta tags Obrigatórias -->
   <meta charset="utf-8">
@@ -102,7 +102,7 @@
           DESENVOLVIMENTO - http://127.0.0.1:5501/pages/contato-retorno.html
           DEPLOY - https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html
         -->
-        <<<<<<< HEAD <form name="formContato" action="" method="post"
+        <form name="formContato" action="" method="post"
           class="col-lg-6 mb-2 position-relative shadow pl-0 rounded-right">
           <a class="btn btn-outline-light my-3 w-100" id="mensagens-enviadas" title="Acessar mensagens enviadas"
             href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="_self">
@@ -138,105 +138,101 @@
               Enviar
             </button>
           </div>
+        </form>
+
+        <section class="col-lg-6">
+          <div class="d-block" role="group" aria-label="Links">
+            <a class="d-block btn btn-outline-light my-3" href="https://www.linkedin.com/in/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i>
+              Linkedin</a>
+            <a class="d-block btn btn-outline-light mb-sm-3" href="https://github.com/laurourbano" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
+            <a class="d-block btn btn-outline-light mb-3" href="https://twitter.com/UrbanoOtavio" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
+            <a class="d-block btn btn-outline-light mb-3" href="https://www.instagram.com/lauro_otavio/" target="_blank"
+              rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
+              Instagram</a>
+          </div>
+          <div class="m-5 p-4 shadow rounded">
+            <h5 class="my-4">Dados de contato</h5>
+            <a class="d-block text-white my-4" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
+            <a class="d-block text-white my-4" href="tel:+5541998086077" title="Telefone/WhatsApp">+55(41)99808-6077</a>
+            <address class="d-block my-4">Jardim São Gabriel - Colombo</address>
+          </div>
+
+        </section>
+
+        <div class="d-lg-flex">
+          <form name="formContato" action="" method="post" class="col-lg-6 mb-2 shadow p-0 rounded-right">
+            <a class="btn btn-outline-light btn-lg my-2 col-lg-12" id="mensagens-enviadas"
+              title="Acessar mensagens enviadas"
+              href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="blank">
+              <i class="fa fa-envelope text-primary"></i>
+              Acessar mensagens
+            </a>
+            <div>
+              <div class="form-group">
+                <label class="" for="nome">Nome</label>
+                <input name="nome" type="text" class="form-control input" id="nome" placeholder="Seu nome" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Endereço de email</label>
+                <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Celular / WhatsApp</label>
+                <input name="telefone" type="tel" class="form-control input" id="telefone" placeholder="(XX) 9XXXX-XXXX"
+                  aria-describedby="Informacao" required>
+                <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
+                  ninguém.</small>
+              </div>
+              <div class="form-group">
+                <div class="sucesso position-absolute">
+                </div>
+                <label for="textArea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
+                <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Escreva aqui sua mensagem"
+                  required></textarea>
+              </div>
+              <button title="Enviar mensagem" type="submit" onclick="adicionar(); mostrarItens()"
+                class="btn btn-primary w-100 my-1">
+                <i class="fa fa-paper-plane"></i>
+                Enviar
+              </button>
+
+            </div>
           </form>
 
           <section class="col-lg-6">
             <div class="d-block" role="group" aria-label="Links">
-              <a class="d-block btn btn-outline-light my-3" href="https://www.linkedin.com/in/laurourbano"
+              <a class="d-block btn btn-outline-light btn-lg my-2" href="https://www.linkedin.com/in/laurourbano"
                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i>
                 Linkedin</a>
-              <a class="d-block btn btn-outline-light mb-sm-3" href="https://github.com/laurourbano" target="_blank"
-                rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i> Github</a>
-              <a class="d-block btn btn-outline-light mb-3" href="https://twitter.com/UrbanoOtavio" target="_blank"
-                rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i> Twitter</a>
-              <a class="d-block btn btn-outline-light mb-3" href="https://www.instagram.com/lauro_otavio/"
+              <a class="d-block btn btn-outline-light btn-lg mb-2" href="https://github.com/laurourbano" target="_blank"
+                rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i>
+                Github</a>
+              <a class="d-block btn btn-outline-light btn-lg mb-2" href="https://twitter.com/UrbanoOtavio"
+                target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i>
+                Twitter</a>
+              <a class="d-block btn btn-outline-light btn-lg mb-5" href="https://www.instagram.com/lauro_otavio/"
                 target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
                 Instagram</a>
             </div>
-            <div class="m-5 p-4 shadow rounded">
-              <h5 class="my-4">Dados de contato</h5>
+
+            <div class="m-2 p-5 shadow">
+              <h4 class="mb-4">Dados de contato</h4>
               <a class="d-block text-white my-4" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
-              <a class="d-block text-white my-4" href="tel:+5541998086077"
-                title="Telefone/WhatsApp">+55(41)99808-6077</a>
-              <address class="d-block my-4">Jardim São Gabriel - Colombo</address>
+              <a title="Telefone/WhatsApp" class="d-block my-4 text-white"
+                href="tel:+5541998086077">+55(41)99808-6077</a>
+              <address class="d-block">Jardim São Gabriel - Colombo</address>
             </div>
-
           </section>
-          =======
-          <div class="d-lg-flex">
-            <form name="formContato" action="" method="post" class="col-lg-6 mb-2 shadow p-0 rounded-right">
-              <a class="btn btn-outline-light btn-lg my-2 col-lg-12" id="mensagens-enviadas"
-                title="Acessar mensagens enviadas"
-                href="https://laurourbano.github.io/portifoliodesafio/pages/contato-retorno.html" target="blank">
-                <i class="fa fa-envelope text-primary"></i>
-                Acessar mensagens
-              </a>
-              <div>
-                <div class="form-group">
-                  <label class="" for="nome">Nome</label>
-                  <input name="nome" type="text" class="form-control input" id="nome" placeholder="Seu nome" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Endereço de email</label>
-                  <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email"
-                    required>
-                </div>
-                <div class="form-group">
-                  <label for="telefone">Celular / WhatsApp</label>
-                  <input name="telefone" type="tel" class="form-control input" id="telefone"
-                    placeholder="(XX) 9XXXX-XXXX" aria-describedby="Informacao" required>
-                  <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
-                    ninguém.</small>
-                </div>
-                <div class="form-group">
-                  <div class="sucesso position-absolute">
-                  </div>
-                  <label for="textArea" class="w-100 position-relative">Deixe aqui sua mensagem</label>
-                  <textarea name="textarea" class="w-100" id="textarea" rows="5" placeholder="Escreva aqui sua mensagem"
-                    required></textarea>
-                </div>
-                <button title="Enviar mensagem" type="submit" onclick="adicionar(); mostrarItens()"
-                  class="btn btn-primary w-100 my-1">
-                  <i class="fa fa-paper-plane"></i>
-                  Enviar
-                </button>
-
-              </div>
-            </form>
-
-            <section class="col-lg-6">
-              <div class="d-block" role="group" aria-label="Links">
-                <a class="d-block btn btn-outline-light btn-lg my-2" href="https://www.linkedin.com/in/laurourbano"
-                  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in text-info"> </i>
-                  Linkedin</a>
-                <a class="d-block btn btn-outline-light btn-lg mb-2" href="https://github.com/laurourbano"
-                  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github text-secondary"> </i>
-                  Github</a>
-                <a class="d-block btn btn-outline-light btn-lg mb-2" href="https://twitter.com/UrbanoOtavio"
-                  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter text-info"> </i>
-                  Twitter</a>
-                <a class="d-block btn btn-outline-light btn-lg mb-5" href="https://www.instagram.com/lauro_otavio/"
-                  target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram text-danger"> </i>
-                  Instagram</a>
-              </div>
-              >>>>>>> parent of fcab38f (Merge branch 'desafiodois' of https://github.com/laurourbano/portifoliodesafio
-              into desafiodois)
-
-              <div class="m-2 p-5 shadow">
-                <h4 class="mb-4">Dados de contato</h4>
-                <a class="d-block text-white my-4" href="mailto:lauro@outlook.com.br">lauro@outlook.com.br</a>
-                <a title="Telefone/WhatsApp" class="d-block my-4 text-white"
-                  href="tel:+5541998086077">+55(41)99808-6077</a>
-                <address class="d-block">Jardim São Gabriel - Colombo</address>
-              </div>
-            </section>
-          </div>
-          <div class="img-fluid container-iframe mt-2">
-            <iframe class="responsive-iframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14422.50621678881!2d-49.1990754!3d-25.35030955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce881209c37f3%3A0xd3cf352ba28a8660!2sJardim%20Sao%20Gabriel%2C%20Colombo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1668548055283!5m2!1spt-BR!2sbr"
-              width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+        </div>
+        <div class="img-fluid container-iframe mt-2">
+          <iframe class="responsive-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14422.50621678881!2d-49.1990754!3d-25.35030955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce881209c37f3%3A0xd3cf352ba28a8660!2sJardim%20Sao%20Gabriel%2C%20Colombo%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1668548055283!5m2!1spt-BR!2sbr"
+            width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
       </div>
     </div>
