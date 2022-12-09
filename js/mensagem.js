@@ -63,13 +63,11 @@ function excluir() {
   return
 };
 
-/*usei o stackoverflow*/
 const handlePhone = (event) => {
   let input = event.target
   input.value = phoneMask(input.value)
 }
 
-//usando regex
 const phoneMask = (value) => {
   if (!value) return ""
   value = value.replace(/\D/g, '')
@@ -77,11 +75,3 @@ const phoneMask = (value) => {
   value = value.replace(/(\d)(\d{4})$/, "$1-$2")
   return value
 }
-
-function validateEmail(email) {
-  var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
-  if (reg.test(email)) {
-    return true;
-  } else {
-    return false;
-  }}

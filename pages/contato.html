@@ -115,13 +115,12 @@
             </div>
             <div class="form-group">
               <label for="email">Endereço de email</label>
-              <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required
-                minlength="3" onkeyup="validateEmail()" />
+              <input name="email" type="email" class="form-control input" id="email" placeholder="Seu email" required>
             </div>
             <div class="form-group">
               <label for="telefone">Celular / WhatsApp</label>
-              <input name="telefone" type="tel" class="form-control input" placeholder="(XX) 9XXXX-XXXX"
-                aria-describedby="Informacao" required maxlength="15" onkeyup="handlePhone(event)" />
+              <input name="telefone" type="tel" maxlength="15" class="form-control input" placeholder="(XX) 9XXXX-XXXX"
+                aria-describedby="Informacao" onkeyup="handlePhone(event)" required />
               <small id="Informacao" class="form-text text-muted">Nunca vamos compartilhar seus dados, com
                 ninguém.</small>
             </div>
