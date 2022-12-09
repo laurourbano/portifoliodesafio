@@ -22,11 +22,6 @@ function adicionar() {
     localStorage.meuArr = JSON.stringify(arr);
     let sucesso = document.querySelector('.sucesso');
     sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
-    
-    setTimeout(() => {
-      sucesso.innerHTML = "";
-    }, 3 * 1000);
-
     event.preventDefault();
 
     document.getElementById('nome').value = "";
@@ -35,7 +30,11 @@ function adicionar() {
     document.getElementById('textarea').value = "";
     document.querySelector('.sucesso').focus();
     document.getElementById('nome').focus();
+    setTimeout(() => {
+      sucesso.innerHTML = "";
+    }, 3 * 1000);
   };
+
 
 };
 
