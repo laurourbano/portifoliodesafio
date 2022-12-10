@@ -21,11 +21,11 @@ function adicionar() {
     arr.push(objetoMensagem);
     localStorage.meuArr = JSON.stringify(arr);
     let sucesso = document.querySelector('.sucesso');
-    sucesso.innerHTML = "<div class='alert alert-success p-2 shadow border border-info' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
+    sucesso.innerHTML = "<div class='alert alert-success shadow border border-info mx-5' role='alert'><strong>Mensagem enviada com sucesso!</strong></div>";
     document.querySelector('.sucesso').focus();
     setTimeout(() => {
       sucesso.innerHTML = "";
-    }, 5 * 1000);
+    }, 3 * 1000);
     event.preventDefault()
     document.getElementById('nome').value = "";
     document.getElementById('email').value = "";
