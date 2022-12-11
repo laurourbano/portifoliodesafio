@@ -15,5 +15,5 @@ p {
   margin: 0 1em 0 1em;
 }
 span {
-  color: rgb(300, 300, 300);
+  color: rgba(300, 300, 300, 1);
 }
