@@ -1,4 +1,4 @@
-var arr = [];
+let arr = [];
 
 function adicionar() {
   if (localStorage.meuArr) {
@@ -53,12 +53,39 @@ function mostrarItens() {
 };
 
 function excluir() {
-  if (confirm('Deseja realmente limpar todas as mensagens enviadas?')) {
-    arr = [];
-    localStorage.meuArr = JSON.stringify(arr)
-  };
-  return
-};
+  let modalHTML = `
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="confirmModalLabel">Confirmação</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Deseja realmente limpar todas as mensagens enviadas?
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-danger" onclick="limparMensagens()">Limpar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.insertAdjacentHTML('beforeend', modalHTML);
+
+  $('#confirmModal').modal('show');
+}
+
+function limparMensagens() {
+  arr = [];
+  localStorage.meuArr = JSON.stringify(arr);
+  $('#confirmModal').modal('hide');
+  mostrarItens();
+}
 
 window.onload = new Cleave('#telefone', {
   blocks: [0, 0, 2, 5, 4],
